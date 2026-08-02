@@ -1,0 +1,27 @@
+{
+  "name": "cholaptop",
+  "version": "1.0.0",
+  "description": "Trang web gioi thieu laptop",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i .src/input.css -0 ./dist/output.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2551050079huy/tkw_2551050079_huy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/2551050079huy/tkw_2551050079_huy/issues"
+  },
+  "homepage": "https://github.com/2551050079huy/tkw_2551050079_huy#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
