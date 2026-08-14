@@ -1,26 +1,556 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chợ laptop </title>
-    <link rel="stylesheet" href="./dist/output.css">r
-</head>
-<body>
-    <a	href="#main">Bỏ	qua	đến	nội	dung	chính</a>
-    <header>
-		<nav	aria-label="Điều	hướng	chính">	…	</nav>
-    </header>
-    <main	id="main">
-		<section	aria-labelledby="hero-title">
-			<h1	id="hero-title">...</h1>
-        </section>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chợ laptop</title>
 
-        <section	aria-labelledby="tinh-nang-title">
-				<h2	id="tinh-nang-title">…</h2>
-				<ul>	<li>	<h3>…</h3>	</li>	</ul>
-		</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+
+  <body>
+    <header
+      id="site-header"
+      class="sticky top-0 z-40 border-b border-transparent bg-surface/80 backdrop-blur transition-all duration-200"
+    >
+      <nav
+        aria-label="Main Navigation"
+        class="mx-auto flex w-full max-w-screen-xl items-center justify-between px-4 py-4 lg:px-8 lg:py-5"
+      >
+        <a href="./index.html" class="flex items-center gap-2.5">
+          <span
+            class="grid h-9 w-9 place-items-center rounded-lg bg-brand-600 font-display text-lg font-extrabold text-white"
+          >
+            C
+          </span>
+
+          <span class="font-display text-xl font-extrabold">Chợ</span>
+        </a>
+        <!-- Menu desktop -->
+
+        <ul class="hidden items-center gap-8 text-sm font-medium lg:flex">
+          <li><a href="#" class="hover:text-brand-600">Tính năng</a></li>
+          <li><a href="#" class="hover:text-brand-600">Cách hoạt động</a></li>
+          <li><a href="#" class="hover:text-brand-600">Bảng giá</a></li>
+          <li><a href="#" class="hover:text-brand-600">Câu hỏi</a></li>
+          <li><a href="#" class="hover:text-brand-600">Sổ lô hàng</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section
+        id="hero"
+        class="mx-auto grid w-full max-w-screen-xl items-center gap-14 px-4 py-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24"
+        aria-labelledby="hero-title"
+      >
+        <div>
+          <p class="eyebrow">Dành cho chợ laptop</p>
+
+          <h1
+            id="hero-title"
+            class="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl"
+          >
+            Laptop uy tín HCM <br />
+            Giá tốt! Mua ngay
+          </h1>
+        </div>
+      </section>
+
+      <section
+        id="doi-tac"
+        class="section mt-10 w-full border-t border-gray-100 py-10"
+        aria-labelledby="doi-tac-heading"
+      >
+        <h2 id="doi-tac-heading" class="sr-only">
+          Đối tác phân phối chính thức
+        </h2>
+
+        <ul class="flex w-full items-center justify-between">
+          <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple"
+              class="h-10 logo-grayscale"
+            />
+          </li>
+
+          <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2e/ASUS_Logo.svg"
+              alt="Asus"
+              class="h-10 logo-grayscale"
+            />
+          </li>
+
+          <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/66/Dell_logo_2016_black.svg"
+              alt="Dell"
+              class="h-10 logo-grayscale"
+            />
+          </li>
+
+          <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9f/HP_2010_Black.svg"
+              alt="HP"
+              class="h-10 logo-grayscale"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section
+        id="tinh_nang"
+        class="section space-y-24 py-16"
+        aria-labelledby="tinh_nang-heading"
+      >
+        <h2 id="tinh_nang-heading" class="sr-only">
+          Đặc điểm nổi bật và Chính sách
+        </h2>
+
+        <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="order-2 lg:order-1">
+            <h3 class="mb-4 text-2xl font-bold text-ink lg:text-3xl">
+              Chuyên nghiệp, uy tín & đảm bảo
+            </h3>
+
+            <p class="mb-6 leading-relaxed text-muted">
+              Nguồn gốc rõ ràng, chính hãng, xuất hóa đơn đầy đủ nếu khách yêu
+              cầu. Bảo hành nghiêm chỉnh từ 3 đến 12 tháng tùy dòng máy mới hay
+              cũ. Đổi trả miễn phí trong 7 đến 15 ngày đầu nếu máy có lỗi từ nhà
+              sản xuất. Đúng cấu hình: Thông tin về CPU, RAM, ổ cứng, card đồ
+              họa và màn hình khớp tuyệt đối với mô tả hoặc hóa đơn. Nguyên bản
+              100%: Cam kết máy chưa từng qua sửa chữa phần cứng hay thay thế
+              linh kiện kém chất lượng.
+            </p>
+
+            <ul class="mb-8 space-y-4">
+              <li class="font-medium text-ink">Laptop chính hãng</li>
+              <li class="font-medium text-ink">Quà tặng kèm</li>
+              <li class="font-medium text-ink">Ưu đãi thanh toán</li>
+            </ul>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <img
+              src="assets/img/camket.png"
+              alt="Chính sách khi mua"
+              class="h-auto w-full rounded-2xl"
+            />
+          </div>
+        </div>
+
+        <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="order-1">
+            <img
+              src="assets/img/doimoi.png"
+              alt="Thu cũ đổi mới"
+              class="h-auto w-full rounded-2xl"
+            />
+          </div>
+
+          <div class="order-2">
+            <h3 class="mb-4 text-2xl font-bold text-ink lg:text-3xl">
+              Chương trình thu cũ đổi mới
+            </h3>
+
+            <p class="mb-6 leading-relaxed text-muted">
+              Định giá công khai: Nhân viên kiểm tra đúng tình trạng thực tế
+              linh kiện, ngoại hình, pin, màn hình và báo giá minh bạch, không
+              ép giá. Trợ giá lên đời: Hỗ trợ thêm tiền mặt hoặc trừ trực tiếp
+              vào giá máy mới tùy thuộc vào dòng máy và chương trình ưu đãi hiện
+              hành.
+            </p>
+
+            <ul class="mb-8 space-y-4">
+              <li class="font-medium text-ink">Thu đổi đa dạng</li>
+              <li class="font-medium text-ink">Hỗ trợ sao lưu dữ liệu</li>
+              <li class="font-medium text-ink">Thủ tục đơn giản</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        id="so_lieu"
+        class="section py-16"
+        aria-labelledby="so_lieu-title"
+      >
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-20">
+          <div class="lg:col-span-5">
+            <p class="eyebrow mb-3">Thống kê uy tín</p>
+
+            <h2
+              id="so_lieu-title"
+              class="mb-5 text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
+            >
+              Được tin tưởng bởi hơn 15,000+ khách hàng
+            </h2>
+
+            <p class="text-lg leading-relaxed text-muted">
+              Chúng tôi cam kết mang đến những chiếc laptop chất lượng nhất cùng
+              dịch vụ hậu mãi chuẩn 5 sao. Luôn đồng hành và hỗ trợ bạn giải
+              quyết mọi vấn đề công nghệ.
+            </p>
+          </div>
+
+          <div class="grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:col-span-7">
+            <div>
+              <h3 class="mb-2 text-2xl font-extrabold text-ink">
+                34 Tỉnh thành
+              </h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Hỗ trợ giao hàng hỏa tốc và ship COD an toàn trên khắp 34 tỉnh
+                thành cả nước, cho phép đồng kiểm trước khi nhận máy.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="mb-2 text-2xl font-extrabold text-ink">
+                15,000+ Người mua
+              </h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Đã tin tưởng chọn mua laptop và hoàn toàn hài lòng với chất
+                lượng phần cứng cũng như sự hỗ trợ tận tâm của chúng tôi.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="mb-2 text-2xl font-extrabold text-ink">
+                99,9% Phản hồi
+              </h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Tỉ lệ giải đáp thắc mắc và hỗ trợ xử lý lỗi kỹ thuật phần mềm
+                thành công trong vòng 30 phút qua các kênh Online.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="mb-2 text-2xl font-extrabold text-ink">
+                Đánh giá 4.9 Sao
+              </h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Hàng ngàn lượt đánh giá tích cực trên các nền tảng thương mại
+                điện tử, hội nhóm và diễn đàn công nghệ lớn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="cam_nhan"
+        class="section py-20"
+        aria-labelledby="cam_nhan-heading"
+      >
+        <h2 id="cam_nhan-heading" class="sr-only">Cảm nhận từ khách hàng</h2>
+
+        <div class="mx-auto max-w-4xl px-5 text-center">
+          <blockquote
+            class="mb-8 text-2xl font-extrabold leading-relaxed text-ink md:text-3xl"
+          >
+            “Hãy tiếp cận mỗi khách hàng với ý tưởng giúp họ giải quyết vấn đề
+            hoặc đạt được mục tiêu, chứ không phải để bán một sản phẩm hay dịch
+            vụ bán hàng.”
+          </blockquote>
+
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <img
+              class="h-10 w-10 rounded-full object-cover"
+              src="assets/img/CEO.jpg"
+              alt="CEO Brian Tracy"
+            />
+
+            <div class="flex items-center text-base">
+              <span class="font-bold text-ink">Brian Tracy</span>
+              <span class="mx-2 text-muted-invert">/</span>
+              <span class="text-muted"> CEO Brian Tracy International </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="pricing"
+        class="section py-20"
+        aria-labelledby="pricing-title"
+      >
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <h2
+            id="pricing-title"
+            class="mb-4 text-3xl font-extrabold text-ink lg:text-4xl"
+          >
+            Phân khúc phù hợp mọi nhu cầu
+          </h2>
+
+          <p class="text-lg text-muted">
+            Từ học tập cơ bản đến xử lý đồ họa chuyên nghiệp, chúng tôi luôn có
+            mức giá tốt nhất dành cho bạn.
+          </p>
+        </div>
+
+        <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
+          <div
+            class="flex flex-col rounded-2xl border border-line p-8 text-center"
+          >
+            <h3 class="mb-2 text-2xl font-bold text-ink">Laptop Cũ</h3>
+
+            <p class="mb-8 text-sm text-muted">
+              Tiết kiệm chi phí tối đa, máy nguyên bản độ mới 95-99%.
+            </p>
+
+            <div class="mb-8 text-5xl font-extrabold text-ink">
+              5Tr
+              <span class="text-base font-normal text-muted">/trở lên</span>
+            </div>
+
+            <ul
+              class="mb-10 flex-1 space-y-5 border-t border-line pt-8 text-left text-sm text-ink"
+            >
+              <li>Nhu cầu lướt web, xem phim giải trí</li>
+              <li>Soạn thảo văn bản, Excel cơ bản</li>
+              <li>Bảo hành phần cứng 6 tháng</li>
+              <li>Tặng kèm chuột và túi chống sốc</li>
+            </ul>
+
+            <button class="btn btn-primary mt-auto w-full" type="button">
+              Xem mẫu máy
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col rounded-2xl border border-line p-8 text-center"
+          >
+            <h3 class="mb-2 text-2xl font-bold text-ink">Sinh Viên</h3>
+
+            <p class="mb-8 text-sm text-muted">
+              Thiết kế mỏng nhẹ, pin trâu, phục vụ học tập đa dụng.
+            </p>
+
+            <div class="mb-8 text-5xl font-extrabold text-ink">
+              12Tr
+              <span class="text-base font-normal text-muted">/trở lên</span>
+            </div>
+
+            <ul
+              class="mb-10 flex-1 space-y-5 border-t border-line pt-8 text-left text-sm text-ink"
+            >
+              <li>Phục vụ học tập, thuyết trình nhóm</li>
+              <li>Xử lý đồ họa 2D (Photoshop, AI) nhẹ nhàng</li>
+              <li>Bảo hành chính hãng 12-24 tháng</li>
+              <li>Hỗ trợ trả góp 0% qua thẻ sinh viên</li>
+            </ul>
+
+            <button class="btn btn-primary mt-auto w-full" type="button">
+              Xem mẫu máy
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col rounded-2xl border border-line p-8 text-center"
+          >
+            <h3 class="mb-2 text-2xl font-bold text-ink">Cao Cấp</h3>
+
+            <p class="mb-8 text-sm text-muted">
+              Hiệu năng khủng, thiết kế sang trọng đẳng cấp doanh nhân.
+            </p>
+
+            <div class="mb-8 text-5xl font-extrabold text-ink">
+              25Tr
+              <span class="text-base font-normal text-muted">/trở lên</span>
+            </div>
+
+            <ul
+              class="mb-10 flex-1 space-y-5 border-t border-line pt-8 text-left text-sm text-ink"
+            >
+              <li>Gaming AAA, thiết kế 3D chuyên nghiệp</li>
+              <li>Vỏ kim loại nguyên khối, viền siêu mỏng</li>
+              <li>Bảo hành VIP cao cấp (đến tận nhà)</li>
+              <li>Lỗi 1 đổi 1 miễn phí trong 30 ngày</li>
+            </ul>
+
+            <button class="btn btn-primary mt-auto w-full" type="button">
+              Xem mẫu máy
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="faq"
+        class="section bg-surface py-24"
+        aria-labelledby="faq-title"
+      >
+        <div class="mx-auto max-w-4xl px-5">
+          <h2
+            id="faq-title"
+            class="mb-14 text-center text-3xl font-extrabold text-ink lg:text-4xl"
+          >
+            Câu hỏi thường gặp
+          </h2>
+
+          <div class="space-y-6">
+            <details class="border-b border-line pb-6" open>
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Mua laptop tại Chợ Laptop có được trả góp không?
+              </summary>
+
+              <p class="mt-4 leading-relaxed text-muted">
+                Chúng tôi hỗ trợ trả góp 0% qua thẻ tín dụng của hơn 25 ngân
+                hàng. Ngoài ra, bạn cũng có thể làm thủ tục trả góp qua căn cước
+                công dân với các công ty tài chính đối tác, duyệt hồ sơ chỉ
+                trong 15 phút. Mọi thủ tục đều được hỗ trợ nhanh gọn tại cửa
+                hàng hoặc online.
+              </p>
+            </details>
+
+            <details class="border-b border-line pb-6">
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Chính sách bảo hành và đổi trả thế nào?
+              </summary>
+
+              <p class="mt-4 leading-relaxed text-muted">
+                Tất cả các dòng máy đều được bảo hành phần cứng từ 6 đến 24
+                tháng tùy phân khúc. Đặc biệt, chúng tôi áp dụng chính sách lỗi
+                1 đổi 1 miễn phí trong 30 ngày đầu tiên nếu máy gặp sự cố từ
+                phía nhà sản xuất.
+              </p>
+            </details>
+
+            <details class="border-b border-line pb-6">
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Cửa hàng có hỗ trợ giao hàng tận nhà không?
+              </summary>
+
+              <p class="mt-4 leading-relaxed text-muted">
+                Chúng tôi giao hàng hỏa tốc trong 2 giờ đối với các khách hàng
+                tại khu vực nội thành HCM. Khách hàng ở các tỉnh thành khác sẽ
+                được hỗ trợ gửi chuyển phát nhanh (Ship COD) an toàn và được
+                quyền đồng kiểm tra hàng trước khi thanh toán.
+              </p>
+            </details>
+
+            <details class="border-b border-line pb-6">
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Máy tính bán ra đã được cài sẵn phần mềm chưa?
+              </summary>
+
+              <p class="mt-4 leading-relaxed text-muted">
+                Máy tính trước khi giao đến tay khách hàng đều được kỹ thuật
+                viên cài đặt sẵn hệ điều hành Windows bản quyền và các ứng dụng
+                văn phòng cơ bản. Chúng tôi cũng hỗ trợ cài đặt miễn phí các
+                phần mềm đồ họa, kỹ thuật theo yêu cầu riêng của bạn.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="cta"
+        class="section bg-surface py-24"
+        aria-labelledby="cta-title"
+      >
+        <div class="mx-auto max-w-3xl px-5 text-center">
+          <h2
+            id="cta-title"
+            class="mb-6 text-3xl font-extrabold text-ink lg:text-4xl"
+          >
+            Sở hữu ngay chiếc laptop trong mơ của bạn
+          </h2>
+
+          <p class="mb-10 text-lg text-muted">
+            Khám phá hàng ngàn mẫu máy chính hãng với mức giá tốt nhất thị
+            trường. Đặt hàng ngay hôm nay để nhận ưu đãi giảm giá cùng bộ quà
+            tặng phụ kiện trị giá 2 triệu đồng!
+          </p>
+
+          <button class="btn btn-primary" type="button">
+            Khám phá sản phẩm ngay
+          </button>
+        </div>
+      </section>
     </main>
-		<footer>	…	</footer>
-</body>
+
+    <footer id="footer" class="bg-surface border-t border-line py-16">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5 mb-16">
+          <div>
+            <h3 class="text-sm font-bold text-ink mb-6">Về chúng tôi</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="text-muted">Giới thiệu chung</a></li>
+              <li><a href="#" class="text-muted">Hệ thống cửa hàng</a></li>
+              <li><a href="#" class="text-muted">Tin tức công nghệ</a></li>
+              <li><a href="#" class="text-muted">Tuyển dụng</a></li>
+              <li><a href="#" class="text-muted">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-bold text-ink mb-6">Hỗ trợ khách hàng</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="text-muted">Tra cứu đơn hàng</a></li>
+              <li><a href="#" class="text-muted">Hướng dẫn mua trả góp</a></li>
+              <li><a href="#" class="text-muted">Chính sách bảo hành</a></li>
+              <li><a href="#" class="text-muted">Chính sách đổi trả</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-bold text-ink mb-6">Sản phẩm</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="text-muted">Laptop Sinh viên</a></li>
+              <li><a href="#" class="text-muted">Laptop Đồ họa - Gaming</a></li>
+              <li><a href="#" class="text-muted">MacBook & iMac</a></li>
+              <li><a href="#" class="text-muted">Linh kiện & Phụ kiện</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-bold text-ink mb-6">Dịch vụ</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="text-muted">Bảo dưỡng & Vệ sinh</a></li>
+              <li><a href="#" class="text-muted">Nâng cấp phần cứng</a></li>
+              <li><a href="#" class="text-muted">Cài đặt phần mềm</a></li>
+              <li><a href="#" class="text-muted">Thu cũ đổi mới</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-bold text-ink mb-6">Pháp lý</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="text-muted">Điều khoản sử dụng</a></li>
+              <li><a href="#" class="text-muted">Chính sách bảo mật</a></li>
+              <li><a href="#" class="text-muted">Giải quyết khiếu nại</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-line pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <a href="#" class="flex items-center gap-2.5">
+            <span
+              class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 text-white font-bold"
+            >
+              C
+            </span>
+
+            <span class="font-display text-xl font-extrabold text-ink">
+              Chợ
+            </span>
+          </a>
+
+          <p class="text-sm text-muted">
+            &copy; 2026 Chợ Laptop. Mọi quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
