@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chợ laptop</title>
+    <title>Cloud PC - Thuê máy tính ảo cấu hình cao</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,8 +13,8 @@
     />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-
   <body>
+    <!-- HEADER -->
     <header
       id="site-header"
       class="sticky top-0 z-40 border-b border-transparent bg-surface/80 backdrop-blur transition-all duration-200"
@@ -29,47 +29,81 @@
           >
             C
           </span>
-
-          <span class="font-display text-xl font-extrabold">Chợ</span>
+          <span class="font-display text-xl font-extrabold">CloudPC</span>
         </a>
-        <!-- Menu desktop -->
 
+        <!-- Menu desktop -->
         <ul class="hidden items-center gap-8 text-sm font-medium lg:flex">
-          <li><a href="#tinh_nang" class="hover:text-brand-600">Tính năng</a></li>
-          <li><a href="#so_lieu" class="hover:text-brand-600">Hoạt động của chúng tôi</a></li>
-          <li><a href="#pricing" class="hover:text-brand-600">Bảng giá</a></li>
-          <li><a href="#faq" class="hover:text-brand-600">Câu hỏi</a></li>
-          <li><a href="#cta" class="hover:text-brand-600">Mua ngay</a></li>
+          <li>
+            <a
+              href="#tinh_nang"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Tính năng</a
+            >
+          </li>
+          <li>
+            <a
+              href="#cach_hoat_dong"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Cách hoạt động</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Bảng giá</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Câu hỏi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#cta"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Dùng thử ngay</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main id="main">
+      <!-- 1. HERO SECTION -->
       <section
         id="hero"
-        class="mx-auto grid w-full max-w-screen-xl items-center gap-14 px-4 py-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24"
+        class="mx-auto grid w-full max-w-screen-xl items-center gap-14 px-4 py-24 lg:grid-cols-2 lg:gap-16 lg:px-8"
         aria-labelledby="hero-title"
       >
-        <div>
-          <p class="eyebrow">Dành cho chợ laptop</p>
-
+        <div class="flex flex-col gap-4 lg:gap-6">
+          <p class="eyebrow">Dịch vụ cho thuê PC trực tuyến</p>
           <h1
             id="hero-title"
-            class="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl"
+            class="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl"
           >
-            Laptop uy tín HCM <br />
-            Giá tốt! Mua ngay
+            Laptop cũ hóa siêu máy trạm. Khởi tạo trong 3 phút.
           </h1>
+          <p class="text-lg text-muted">
+            Chạy mượt Premiere, AutoCAD, hay Max Setting Cyberpunk 2077 ngay
+            trên chiếc máy tính cùi bắp của bạn. Chỉ cần mở ứng dụng và kết nối
+            mạng.
+          </p>
         </div>
       </section>
 
+      <!-- 2. SECTION ĐỐI TÁC -->
       <section
         id="doi-tac"
-        class="section mt-10 w-full border-t border-gray-100 py-10"
+        class="section w-full border-t border-gray-100 py-20"
         aria-labelledby="doi-tac-heading"
       >
         <h2 id="doi-tac-heading" class="sr-only">
-          Đối tác phân phối chính thức
+          Phần cứng được cung cấp bởi
         </h2>
 
         <ul class="flex w-full items-center justify-between">
@@ -78,71 +112,74 @@
               src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
               alt="Apple"
               class="h-10 logo-grayscale"
+              aria-hidden="true"
             />
           </li>
-
           <li>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/2/2e/ASUS_Logo.svg"
               alt="Asus"
               class="h-10 logo-grayscale"
+              aria-hidden="true"
             />
           </li>
-
           <li>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/66/Dell_logo_2016_black.svg"
               alt="Dell"
               class="h-10 logo-grayscale"
+              aria-hidden="true"
             />
           </li>
-
           <li>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/9f/HP_2010_Black.svg"
               alt="HP"
               class="h-10 logo-grayscale"
+              aria-hidden="true"
             />
           </li>
         </ul>
       </section>
 
+      <!-- 3. SECTION TÍNH NĂNG -->
       <section
         id="tinh_nang"
-        class="section space-y-24 py-16"
+        class="section flex flex-col gap-24 py-24"
         aria-labelledby="tinh_nang-heading"
       >
         <h2 id="tinh_nang-heading" class="sr-only">
-          Đặc điểm nổi bật và Chính sách
+          Lợi ích thực tế khi dùng Cloud PC
         </h2>
 
         <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div class="order-2 lg:order-1">
-            <h3 class="mb-4 text-2xl font-bold text-ink lg:text-3xl">
-              Chuyên nghiệp, uy tín & đảm bảo
+          <div class="order-2 flex flex-col gap-6 lg:order-1">
+            <h3 class="text-2xl font-bold text-ink lg:text-3xl">
+              Render video, thiết kế 3D không lo cháy máy
             </h3>
-
-            <p class="mb-6 leading-relaxed text-muted">
-              Nguồn gốc rõ ràng, chính hãng, xuất hóa đơn đầy đủ nếu khách yêu
-              cầu. Bảo hành nghiêm chỉnh từ 3 đến 12 tháng tùy dòng máy mới hay
-              cũ. Đổi trả miễn phí trong 7 đến 15 ngày đầu nếu máy có lỗi từ nhà
-              sản xuất. Đúng cấu hình: Thông tin về CPU, RAM, ổ cứng, card đồ
-              họa và màn hình khớp tuyệt đối với mô tả hoặc hóa đơn. Nguyên bản
-              100%: Cam kết máy chưa từng qua sửa chữa phần cứng hay thay thế
-              linh kiện kém chất lượng.
+            <p class="leading-relaxed text-muted">
+              Đẩy file project nặng lên máy ảo có sẵn card RTX 4090. Nhấn nút
+              Render, sau đó bạn có thể tắt máy tính thật đi ngủ. Máy ảo trên
+              server vẫn chạy 24/7, sáng mai dậy là có sẵn video thành phẩm.
             </p>
 
-            <ul class="mb-8 space-y-4">
-              <li class="font-medium text-ink">Laptop chính hãng</li>
-              <li class="font-medium text-ink">Quà tặng kèm</li>
-              <li class="font-medium text-ink">Ưu đãi thanh toán</li>
+            <ul class="flex flex-col gap-4">
+              <li class="font-medium text-ink">
+                Render nhanh gấp 5 lần máy tính bàn thông thường
+              </li>
+              <li class="font-medium text-ink">
+                Không tốn điện nhà, không lo quạt tản nhiệt kêu to
+              </li>
+              <li class="font-medium text-ink">
+                Treo tool, cắm chuột game 24/7 không đứt mạng
+              </li>
             </ul>
           </div>
 
           <div class="order-1 lg:order-2">
             <img
               src="assets/img/camket.png"
-              alt="Chính sách khi mua"
+              alt="Màn hình phần mềm render video"
               class="h-auto w-full rounded-2xl"
             />
           </div>
@@ -152,99 +189,164 @@
           <div class="order-1">
             <img
               src="assets/img/doimoi.png"
-              alt="Thu cũ đổi mới"
+              alt="Chơi game PC trên màn hình điện thoại"
               class="h-auto w-full rounded-2xl"
             />
           </div>
 
-          <div class="order-2">
-            <h3 class="mb-4 text-2xl font-bold text-ink lg:text-3xl">
-              Chương trình thu cũ đổi mới
+          <div class="order-2 flex flex-col gap-6">
+            <h3 class="text-2xl font-bold text-ink lg:text-3xl">
+              Cày game PC AAA trực tiếp trên MacBook, điện thoại
             </h3>
-
-            <p class="mb-6 leading-relaxed text-muted">
-              Định giá công khai: Nhân viên kiểm tra đúng tình trạng thực tế
-              linh kiện, ngoại hình, pin, màn hình và báo giá minh bạch, không
-              ép giá. Trợ giá lên đời: Hỗ trợ thêm tiền mặt hoặc trừ trực tiếp
-              vào giá máy mới tùy thuộc vào dòng máy và chương trình ưu đãi hiện
-              hành.
+            <p class="leading-relaxed text-muted">
+              Đang dở ván Black Myth: Wukong ở PC nhà? Ra quán cafe, rút MacBook
+              hoặc iPad ra, mở app Cloud PC là chơi tiếp được ngay ở đúng điểm
+              vừa lưu. Mọi dữ liệu nằm trên tài khoản cloud của bạn.
             </p>
 
-            <ul class="mb-8 space-y-4">
-              <li class="font-medium text-ink">Thu đổi đa dạng</li>
-              <li class="font-medium text-ink">Hỗ trợ sao lưu dữ liệu</li>
-              <li class="font-medium text-ink">Thủ tục đơn giản</li>
+            <ul class="flex flex-col gap-4">
+              <li class="font-medium text-ink">
+                Hỗ trợ cài app trên Windows, macOS, Android, iOS
+              </li>
+              <li class="font-medium text-ink">
+                Không cần chép file qua lại, đồng bộ màn hình tức thì
+              </li>
+              <li class="font-medium text-ink">
+                Nhận thẳng tay cầm Xbox/PS5 cắm vào máy thật
+              </li>
             </ul>
           </div>
         </div>
       </section>
+
+      <!-- SECTION CÁCH HOẠT ĐỘNG -->
       <section
-        id="so_lieu"
-        class="section py-16"
-        aria-labelledby="so_lieu-title"
+        id="cach_hoat_dong"
+        class="section py-24"
+        aria-labelledby="cach_hoat_dong-title"
       >
-        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-20">
-          <div class="lg:col-span-5">
-            <p class="eyebrow mb-3">Thống kê uy tín</p>
-
+        <div class="flex flex-col gap-14">
+          <!-- Cụm Tiêu đề -->
+          <div class="flex flex-col gap-4">
+            <p class="eyebrow">Cách hoạt động</p>
             <h2
-              id="so_lieu-title"
-              class="mb-5 text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
+              id="cach_hoat_dong-title"
+              class="text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
             >
-              Được tin tưởng bởi hơn 15,000+ khách hàng
+              Ba bước đơn giản để sở hữu siêu máy trạm
             </h2>
-
-            <p class="text-lg leading-relaxed text-muted">
-              Chúng tôi cam kết mang đến những chiếc laptop chất lượng nhất cùng
-              dịch vụ hậu mãi chuẩn 5 sao. Luôn đồng hành và hỗ trợ bạn giải
-              quyết mọi vấn đề công nghệ.
-            </p>
           </div>
 
-          <div class="grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:col-span-7">
-            <div>
-              <h3 class="mb-2 text-2xl font-extrabold text-ink">
-                34 Tỉnh thành
+          <!-- Lưới 3 bước -->
+          <ol class="grid w-full items-stretch gap-8 lg:grid-cols-3 lg:gap-6">
+            <!-- Bước 1 -->
+            <li
+              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+            >
+              <span class="font-bold text-brand-600">Bước 01</span>
+              <h3 class="text-xl font-bold text-ink">
+                Tạo tài khoản & Tải app
               </h3>
               <p class="text-sm leading-relaxed text-muted">
-                Hỗ trợ giao hàng hỏa tốc và ship COD an toàn trên khắp 34 tỉnh
-                thành cả nước, cho phép đồng kiểm trước khi nhận máy.
+                Đăng ký nhanh bằng số điện thoại không cần thẻ ngân hàng. Tải
+                ứng dụng điều khiển CloudPC siêu nhẹ về máy tính hoặc điện thoại
+                của bạn.
               </p>
-            </div>
+            </li>
 
-            <div>
-              <h3 class="mb-2 text-2xl font-extrabold text-ink">
-                15,000+ Người mua
+            <!-- Bước 2 -->
+            <li
+              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+            >
+              <span class="font-bold text-brand-600">Bước 02</span>
+              <h3 class="text-xl font-bold text-ink">
+                Chọn cấu hình & Kết nối
               </h3>
               <p class="text-sm leading-relaxed text-muted">
-                Đã tin tưởng chọn mua laptop và hoàn toàn hài lòng với chất
-                lượng phần cứng cũng như sự hỗ trợ tận tâm của chúng tôi.
+                Lựa chọn gói sức mạnh (Creator, AAA Gaming) phù hợp với nhu cầu
+                thực tế và nhấn "Kết nối". Siêu máy trạm sẽ được khởi tạo và sẵn
+                sàng trong tích tắc.
               </p>
-            </div>
+            </li>
 
-            <div>
-              <h3 class="mb-2 text-2xl font-extrabold text-ink">
-                99,9% Phản hồi
-              </h3>
+            <!-- Bước 3 -->
+            <li
+              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+            >
+              <span class="font-bold text-brand-600">Bước 03</span>
+              <h3 class="text-xl font-bold text-ink">Trải nghiệm sức mạnh</h3>
               <p class="text-sm leading-relaxed text-muted">
-                Tỉ lệ giải đáp thắc mắc và hỗ trợ xử lý lỗi kỹ thuật phần mềm
-                thành công trong vòng 30 phút qua các kênh Online.
+                Màn hình Windows ảo hiện lên chuẩn 4K không độ trễ. Giờ đây bạn
+                đã có toàn quyền cài đặt phần mềm nặng, tải game AAA và làm việc
+                ngay lập tức.
               </p>
-            </div>
-
-            <div>
-              <h3 class="mb-2 text-2xl font-extrabold text-ink">
-                Đánh giá 4.9 Sao
-              </h3>
-              <p class="text-sm leading-relaxed text-muted">
-                Hàng ngàn lượt đánh giá tích cực trên các nền tảng thương mại
-                điện tử, hội nhóm và diễn đàn công nghệ lớn.
-              </p>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
+      <!-- 4. SECTION SỐ LIỆU -->
+      <section
+        id="so_lieu"
+        class="section py-24"
+        aria-labelledby="so_lieu-title"
+      >
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-20">
+          <div class="flex flex-col gap-4 lg:col-span-5 lg:gap-5">
+            <p class="eyebrow">Thông số kỹ thuật thực tế</p>
+            <h2
+              id="so_lieu-title"
+              class="text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
+            >
+              Mạng khỏe hơn cáp quang ngoài quán nét
+            </h2>
+            <p class="text-lg leading-relaxed text-muted">
+              Hệ thống máy chủ được đặt thẳng tại Data Center FPT Tân Thuận
+              (TP.HCM) và Hòa Lạc (Hà Nội). Đảm bảo bấm chuột là nhận, không có
+              chuyện delay 1-2 giây.
+            </p>
+          </div>
+
+          <dl
+            class="grid gap-y-12 sm:grid-cols-2 lg:col-span-7 sm:divide-x sm:divide-line"
+          >
+            <!-- Đã bọc <dt> và <dd> vào div, dùng gap-2 và gỡ mt-2 -->
+            <div class="flex flex-col gap-2 px-4 text-center sm:text-left">
+              <dt class="order-2 text-sm leading-relaxed text-muted">
+                Từ máy tính nhà bạn đến máy chủ nội địa chỉ mất chưa tới 10
+                mili-giây.
+              </dt>
+              <dd class="text-3xl font-extrabold text-ink">Độ trễ < 10ms</dd>
+            </div>
+
+            <div class="flex flex-col gap-2 px-4 text-center sm:text-left">
+              <dt class="order-2 text-sm leading-relaxed text-muted">
+                Tải file con game 100GB từ Steam về máy ảo chỉ mất khoảng 2
+                phút.
+              </dt>
+              <dd class="text-3xl font-extrabold text-ink">
+                Băng thông 10Gbps
+              </dd>
+            </div>
+
+            <div class="flex flex-col gap-2 px-4 text-center sm:text-left">
+              <dt class="order-2 text-sm leading-relaxed text-muted">
+                Có máy phát điện dự phòng và 3 tuyến cáp quang khác nhau.
+              </dt>
+              <dd class="text-3xl font-extrabold text-ink">Hoạt động 24/7</dd>
+            </div>
+
+            <div class="flex flex-col gap-2 px-4 text-center sm:text-left">
+              <dt class="order-2 text-sm leading-relaxed text-muted">
+                Ổ cứng ảo bị format xóa trắng 100% ngay khi bạn bấm hủy gói.
+              </dt>
+              <dd class="text-3xl font-extrabold text-ink">Xóa sạch dữ liệu</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 5. SECTION CẢM NHẬN -->
       <section
         id="cam_nhan"
         class="section py-20"
@@ -252,285 +354,328 @@
       >
         <h2 id="cam_nhan-heading" class="sr-only">Cảm nhận từ khách hàng</h2>
 
-        <div class="mx-auto max-w-4xl px-5 text-center">
+        <figure
+          class="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center"
+        >
           <blockquote
-            class="mb-8 text-2xl font-extrabold leading-relaxed text-ink md:text-3xl"
+            class="text-2xl font-extrabold leading-relaxed text-ink md:text-3xl"
           >
             “Hãy tiếp cận mỗi khách hàng với ý tưởng giúp họ giải quyết vấn đề
             hoặc đạt được mục tiêu, chứ không phải để bán một sản phẩm hay dịch
             vụ bán hàng.”
           </blockquote>
 
-          <div class="flex flex-wrap items-center justify-center gap-3">
+          <figcaption class="flex items-center justify-center gap-3">
             <img
               class="h-10 w-10 rounded-full object-cover"
               src="assets/img/CEO.jpg"
               alt="CEO Brian Tracy"
             />
-
-            <div class="flex items-center text-base">
-              <span class="font-bold text-ink">Brian Tracy</span>
-              <span class="mx-2 text-muted-invert">/</span>
-              <span class="text-muted"> CEO Brian Tracy International </span>
+            <div class="flex items-center gap-2 text-base">
+              <cite class="font-bold not-italic text-ink">Brian Tracy</cite>
+              <span class="text-muted-invert">/</span>
+              <span class="text-muted">CEO Brian Tracy International</span>
             </div>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
       </section>
+
+      <!-- 6. SECTION BẢNG GIÁ -->
       <section
         id="pricing"
-        class="section py-20"
+        class="section py-24"
         aria-labelledby="pricing-title"
       >
-        <div class="mx-auto mb-14 max-w-2xl text-center">
-          <h2
-            id="pricing-title"
-            class="mb-4 text-3xl font-extrabold text-ink lg:text-4xl"
-          >
-            Phân khúc phù hợp mọi nhu cầu
-          </h2>
-
-          <p class="text-lg text-muted">
-            Từ học tập cơ bản đến xử lý đồ họa chuyên nghiệp, chúng tôi luôn có
-            mức giá tốt nhất dành cho bạn.
-          </p>
-        </div>
-
-        <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
-          <div
-            class="flex flex-col rounded-2xl border border-line p-8 text-center"
-          >
-            <h3 class="mb-2 text-2xl font-bold text-ink">Laptop Cũ</h3>
-
-            <p class="mb-8 text-sm text-muted">
-              Tiết kiệm chi phí tối đa, máy nguyên bản độ mới 95-99%.
-            </p>
-
-            <div class="mb-8 text-5xl font-extrabold text-ink">
-              5Tr
-              <span class="text-base font-normal text-muted">/trở lên</span>
-            </div>
-
-            <ul
-              class="mb-10 flex-1 space-y-5 border-t border-line pt-8 text-left text-sm text-ink"
+        <div class="flex flex-col gap-14">
+          <div class="mx-auto flex max-w-2xl flex-col gap-4 text-center">
+            <h2
+              id="pricing-title"
+              class="text-3xl font-extrabold text-ink lg:text-4xl"
             >
-              <li>Nhu cầu lướt web, xem phim giải trí</li>
-              <li>Soạn thảo văn bản, Excel cơ bản</li>
-              <li>Bảo hành phần cứng 6 tháng</li>
-              <li>Tặng kèm chuột và túi chống sốc</li>
-            </ul>
-
-            <button class="btn btn-primary mt-auto w-full" type="button">
-              Xem mẫu máy
-            </button>
+              Ba gói cấu hình, tính tiền theo tháng
+            </h2>
+            <p class="text-lg text-muted">
+              Thuê trọn gói 30 ngày, xài bao nhiêu tùy thích. Hết tháng không
+              dùng nữa có thể bấm hủy, không trừ tiền ngầm.
+            </p>
           </div>
 
-          <div
-            class="flex flex-col rounded-2xl border border-line p-8 text-center"
+          <ul
+            class="mx-auto grid w-full max-w-6xl items-stretch gap-8 lg:grid-cols-3 lg:gap-6"
           >
-            <h3 class="mb-2 text-2xl font-bold text-ink">Sinh Viên</h3>
-
-            <p class="mb-8 text-sm text-muted">
-              Thiết kế mỏng nhẹ, pin trâu, phục vụ học tập đa dụng.
-            </p>
-
-            <div class="mb-8 text-5xl font-extrabold text-ink">
-              12Tr
-              <span class="text-base font-normal text-muted">/trở lên</span>
-            </div>
-
-            <ul
-              class="mb-10 flex-1 space-y-5 border-t border-line pt-8 text-left text-sm text-ink"
+            <!-- Gói 1: Thêm gap-8 vào li và xóa mb-8, mb-10 -->
+            <li
+              class="card flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center"
             >
-              <li>Phục vụ học tập, thuyết trình nhóm</li>
-              <li>Xử lý đồ họa 2D (Photoshop, AI) nhẹ nhàng</li>
-              <li>Bảo hành chính hãng 12-24 tháng</li>
-              <li>Hỗ trợ trả góp 0% qua thẻ sinh viên</li>
-            </ul>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold text-ink">
+                  Sinh viên IT & Treo máy
+                </h3>
+                <p class="text-sm text-muted">
+                  Đủ RAM để cắm tool MMO, chạy giả lập Android nhẹ.
+                </p>
+              </div>
 
-            <button class="btn btn-primary mt-auto w-full" type="button">
-              Xem mẫu máy
-            </button>
-          </div>
+              <div class="text-5xl font-extrabold text-ink">
+                299K<span class="text-base font-normal text-muted">/tháng</span>
+              </div>
 
-          <div
-            class="flex flex-col rounded-2xl border border-line p-8 text-center"
-          >
-            <h3 class="mb-2 text-2xl font-bold text-ink">Cao Cấp</h3>
+              <ul
+                class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
+              >
+                <li>CPU: Xeon 8 nhân</li>
+                <li>RAM: 16GB DDR4</li>
+                <li>Ổ cứng: 256GB SSD (Cài sẵn Win 10)</li>
+                <li>Card màn hình: Onboard</li>
+              </ul>
 
-            <p class="mb-8 text-sm text-muted">
-              Hiệu năng khủng, thiết kế sang trọng đẳng cấp doanh nhân.
-            </p>
+              <button class="btn btn-primary mt-auto w-full" type="button">
+                Thuê gói này
+              </button>
+            </li>
 
-            <div class="mb-8 text-5xl font-extrabold text-ink">
-              25Tr
-              <span class="text-base font-normal text-muted">/trở lên</span>
-            </div>
-
-            <ul
-              class="mb-10 flex-1 space-y-5 border-t border-line pt-8 text-left text-sm text-ink"
+            <!-- Gói 2 -->
+            <li
+              class="card relative flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center shadow-lg ring-2 ring-brand-600"
             >
-              <li>Gaming AAA, thiết kế 3D chuyên nghiệp</li>
-              <li>Vỏ kim loại nguyên khối, viền siêu mỏng</li>
-              <li>Bảo hành VIP cao cấp (đến tận nhà)</li>
-              <li>Lỗi 1 đổi 1 miễn phí trong 30 ngày</li>
-            </ul>
+              <span
+                class="absolute -top-3 left-6 rounded-full bg-brand-600 px-3 py-1 text-xs font-bold tracking-wide text-white"
+                >Được chọn nhiều nhất</span
+              >
 
-            <button class="btn btn-primary mt-auto w-full" type="button">
-              Xem mẫu máy
-            </button>
-          </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold text-ink">Dựng phim & Vẽ 3D</h3>
+                <p class="text-sm text-muted">
+                  Có card đồ họa rời để tăng tốc độ xuất video Premiere, After
+                  Effects.
+                </p>
+              </div>
+
+              <div class="text-5xl font-extrabold text-ink">
+                599K<span class="text-base font-normal text-muted">/tháng</span>
+              </div>
+
+              <ul
+                class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
+              >
+                <li>CPU: Xeon 16 nhân</li>
+                <li>RAM: 32GB DDR4</li>
+                <li>Card đồ họa: RTX 3060 (12GB VRAM)</li>
+                <li>Ổ cứng: 512GB NVMe tốc độ cao</li>
+              </ul>
+
+              <button class="btn btn-primary mt-auto w-full" type="button">
+                Thuê gói này
+              </button>
+            </li>
+
+            <!-- Gói 3 -->
+            <li
+              class="card flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center"
+            >
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold text-ink">Cày Game AAA (Max)</h3>
+                <p class="text-sm text-muted">
+                  Cấu hình tiệm cận phòng net VIP nhất. Chơi mượt mọi game nặng
+                  nhất.
+                </p>
+              </div>
+
+              <div class="text-5xl font-extrabold text-ink">
+                999K<span class="text-base font-normal text-muted">/tháng</span>
+              </div>
+
+              <ul
+                class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
+              >
+                <li>CPU: i9 13900K (Trọn bộ)</li>
+                <li>RAM: 64GB DDR5</li>
+                <li>Card đồ họa: RTX 4090 (24GB)</li>
+                <li>Ổ cứng: 1TB NVMe Gen 4</li>
+              </ul>
+
+              <button class="btn btn-primary mt-auto w-full" type="button">
+                Thuê gói này
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
+
+      <!-- 7. SECTION FAQ -->
       <section
         id="faq"
         class="section bg-surface py-24"
         aria-labelledby="faq-title"
       >
-        <div class="mx-auto max-w-4xl px-5">
-          <h2
-            id="faq-title"
-            class="mb-14 text-center text-3xl font-extrabold text-ink lg:text-4xl"
-          >
-            Câu hỏi thường gặp
-          </h2>
+        <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <div>
+            <h2
+              id="faq-title"
+              class="text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
+            >
+              Giải đáp thắc mắc trước khi thuê
+            </h2>
+          </div>
 
-          <div class="space-y-6">
+          <div class="flex flex-col gap-6">
             <details class="border-b border-line pb-6" open>
               <summary class="cursor-pointer text-lg font-bold text-ink">
-                Mua laptop tại Chợ Laptop có được trả góp không?
+                Mạng ở phòng trọ hơi yếu, dùng 4G có chơi được không?
               </summary>
-
-              <p class="mt-4 leading-relaxed text-muted">
-                Chúng tôi hỗ trợ trả góp 0% qua thẻ tín dụng của hơn 25 ngân
-                hàng. Ngoài ra, bạn cũng có thể làm thủ tục trả góp qua căn cước
-                công dân với các công ty tài chính đối tác, duyệt hồ sơ chỉ
-                trong 15 phút. Mọi thủ tục đều được hỗ trợ nhanh gọn tại cửa
-                hàng hoặc online.
+              <p class="pt-4 leading-relaxed text-muted">
+                Bạn chỉ cần mạng ổn định ở mức 15Mbps (tương đương tốc độ xem
+                YouTube 1080p không giật). Nếu phát 4G từ điện thoại, bạn sẽ tốn
+                khoảng 1GB dung lượng cho mỗi giờ sử dụng.
               </p>
             </details>
 
             <details class="border-b border-line pb-6">
               <summary class="cursor-pointer text-lg font-bold text-ink">
-                Chính sách bảo hành và đổi trả thế nào?
+                Có chơi được các game cài phần mềm chống hack (Valorant, LMHT)
+                không?
               </summary>
-
-              <p class="mt-4 leading-relaxed text-muted">
-                Tất cả các dòng máy đều được bảo hành phần cứng từ 6 đến 24
-                tháng tùy phân khúc. Đặc biệt, chúng tôi áp dụng chính sách lỗi
-                1 đổi 1 miễn phí trong 30 ngày đầu tiên nếu máy gặp sự cố từ
-                phía nhà sản xuất.
+              <p class="pt-4 leading-relaxed text-muted">
+                Chơi được 100%. Máy ảo của chúng tôi sử dụng công nghệ cấp phát
+                phần cứng độc lập (Passthrough GPU), giúp vượt qua hệ thống quét
+                Vanguard của Riot Games hay XignCode dễ dàng như máy tính thật.
               </p>
             </details>
 
             <details class="border-b border-line pb-6">
               <summary class="cursor-pointer text-lg font-bold text-ink">
-                Cửa hàng có hỗ trợ giao hàng tận nhà không?
+                Tôi có được tự cài phần mềm crack hoặc cắm tool cày view không?
               </summary>
-
-              <p class="mt-4 leading-relaxed text-muted">
-                Chúng tôi giao hàng hỏa tốc trong 2 giờ đối với các khách hàng
-                tại khu vực nội thành HCM. Khách hàng ở các tỉnh thành khác sẽ
-                được hỗ trợ gửi chuyển phát nhanh (Ship COD) an toàn và được
-                quyền đồng kiểm tra hàng trước khi thanh toán.
+              <p class="pt-4 leading-relaxed text-muted">
+                Bạn được cấp toàn quyền quản trị (Tài khoản Administrator). Bạn
+                muốn tải gì, cài phần mềm gì là quyền cá nhân của bạn, chúng tôi
+                không can thiệp hay quét ổ cứng của người dùng.
               </p>
             </details>
 
             <details class="border-b border-line pb-6">
               <summary class="cursor-pointer text-lg font-bold text-ink">
-                Máy tính bán ra đã được cài sẵn phần mềm chưa?
+                Hết tháng tôi chưa kịp gia hạn, file lưu trong máy có bị mất
+                không?
               </summary>
-
-              <p class="mt-4 leading-relaxed text-muted">
-                Máy tính trước khi giao đến tay khách hàng đều được kỹ thuật
-                viên cài đặt sẵn hệ điều hành Windows bản quyền và các ứng dụng
-                văn phòng cơ bản. Chúng tôi cũng hỗ trợ cài đặt miễn phí các
-                phần mềm đồ họa, kỹ thuật theo yêu cầu riêng của bạn.
+              <p class="pt-4 leading-relaxed text-muted">
+                Dữ liệu ổ cứng của bạn sẽ được đóng băng và lưu trữ miễn phí
+                thêm 7 ngày sau khi hết hạn gói cước. Qua ngày thứ 8, hệ thống
+                mới tự động format để giải phóng tài nguyên.
               </p>
             </details>
           </div>
         </div>
       </section>
 
+      <!-- 8. SECTION CTA -->
       <section
         id="cta"
         class="section bg-surface py-24"
         aria-labelledby="cta-title"
       >
-        <div class="mx-auto max-w-3xl px-5 text-center">
+        <div
+          class="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center lg:gap-10"
+        >
           <h2
             id="cta-title"
-            class="mb-6 text-3xl font-extrabold text-ink lg:text-4xl"
+            class="text-3xl font-extrabold text-ink lg:text-4xl"
           >
-            Sở hữu ngay chiếc laptop trong mơ của bạn
+            Tạo tài khoản mất 2 phút. Dùng thử 3 tiếng miễn phí.
           </h2>
 
-          <p class="mb-10 text-lg text-muted">
-            Khám phá hàng ngàn mẫu máy chính hãng với mức giá tốt nhất thị
-            trường. Đặt hàng ngay hôm nay để nhận ưu đãi giảm giá cùng bộ quà
-            tặng phụ kiện trị giá 2 triệu đồng!
+          <p class="text-lg text-muted">
+            Không cần nhập thẻ tín dụng ngân hàng. Chỉ cần đăng ký bằng số điện
+            thoại, tải phần mềm điều khiển về và bấm kết nối.
           </p>
 
           <button class="btn btn-primary" type="button">
-            Khám phá sản phẩm ngay
+            Lấy mã dùng thử miễn phí
           </button>
         </div>
       </section>
     </main>
 
-   <footer id="footer" class="bg-surface border-t border-line py-16">
-  <div class="mx-auto max-w-6xl px-5">
-    
+    <!-- 9. FOOTER -->
+    <footer
+      id="footer"
+      class="bg-surface border-t border-line py-20"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
 
-    <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5 mb-16">
-      <div>
-        <a href="#" class="flex items-center gap-2.5">
-          <span class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 text-white font-bold">
-            C
-          </span>
-          <span class="font-display text-xl font-extrabold text-ink">
-            Chợ
-          </span>
-        </a>
-        <p class="mt-4 max-w-xs text-sm text-muted">Trang web thuê máy tính uy tín Hồ Chí Minh</p>
+      <!-- Bọc flex gap-16 thay cho mb-16 -->
+      <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col gap-4">
+            <a href="#" class="flex items-center gap-2.5">
+              <span
+                class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 font-bold text-white"
+              >
+                C
+              </span>
+              <span class="font-display text-xl font-extrabold text-ink">
+                CloudPC
+              </span>
+            </a>
+            <p class="max-w-xs text-sm text-muted">
+              Hệ thống cho thuê máy ảo chạy Windows cấu hình cao.
+            </p>
+          </div>
+
+          <nav aria-labelledby="footer-purpose" class="flex flex-col gap-6">
+            <h3 id="footer-purpose" class="text-sm font-bold text-ink">
+              Mục đích thuê
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="#tinh_nang" class="text-muted"
+                  >Thuê để chơi Game nặng</a
+                >
+              </li>
+              <li>
+                <a href="#tinh_nang" class="text-muted"
+                  >Thuê để Render kiến trúc</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="text-muted"
+                  >Thuê để cắm tool, giả lập</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-support" class="flex flex-col gap-6">
+            <h3 id="footer-support" class="text-sm font-bold text-ink">
+              Hỗ trợ kỹ thuật
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="#faq" class="text-muted">Đọc câu hỏi thường gặp</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">Video hướng dẫn sử dụng</a>
+              </li>
+              <li><a href="#" class="text-muted">Zalo hỗ trợ trực tiếp</a></li>
+            </ul>
+          </nav>
+
+          <div class="flex flex-col gap-6">
+            <h3 class="text-sm font-bold text-ink">Liên hệ</h3>
+            <address class="text-sm not-italic text-muted">
+              Máy chủ đặt tại:<br />
+              Data Center Tân Thuận, Quận 7, TP.HCM
+            </address>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between gap-4 border-t border-line pt-8 md:flex-row"
+        >
+          <p class="text-sm text-muted">&copy; 2026 CloudPC VN.</p>
+        </div>
       </div>
-
-  
-      <div>
-        <h3 class="text-sm font-bold text-ink mb-6">Sản phẩm</h3>
-        <ul class="space-y-4">
-          <li><a href="#tinh_nang" class="text-muted">Tính năng</a></li>
-          <li><a href="#pricing" class="text-muted">Bảng giá</a></li>
-          <li><a href="#cta" class="text-muted">Mua ngay</a></li>
-        </ul>
-      </div>
-
-  
-      <div>
-        <h3 class="text-sm font-bold text-ink mb-6">Về chúng tôi</h3>
-        <ul class="space-y-4">
-          <li><a href="#faq" class="text-muted">Câu hỏi thường gặp</a></li>
-          <li><a href="#" class="text-muted">0102030405</a></li>
-          <li><a href="#" class="text-muted">cholaptop@.vn</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-sm font-bold text-ink mb-6">Địa chỉ</h3>
-        <address class="mt-4 text-sm not-italic text-muted">
-          1074 Lê Văn Luong, Xã Nhà Bè<br />
-          TP Hồ Chí Minh
-        </address>
-      </div>
-
-    </div>
-
-    <div class="border-t border-line pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-muted">
-        &copy; 2026 Chợ Laptop. Mọi quyền được bảo lưu.
-      </p>
-    </div>
-
-  </div>
-</footer>
+    </footer>
   </body>
 </html>
