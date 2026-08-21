@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng giá — CloudPC</title>
+    <meta
+      name="description"
+      content="Ba gói cấu hình CloudPC: Sinh viên IT, Dựng phim và Cày Game AAA. So sánh chi tiết phần cứng và giải đáp thắc mắc thanh toán."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div id="nav-sentinel" aria-hidden="true" class="h-px w-full"></div>
+    <a
+      href="#main"
+      class="btn btn-primary sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50"
+    >
+      Bỏ qua đến nội dung chính
+    </a>
+
+    <!-- HEADER -->
+    <header
+      id="site-header"
+      class="sticky top-0 z-40 border-b border-line bg-surface/80 backdrop-blur transition-all duration-200"
+    >
+      <nav
+        aria-label="Main Navigation"
+        class="mx-auto flex w-full max-w-screen-xl items-center justify-between px-4 py-4 lg:px-8 lg:py-5"
+      >
+        <a href="./index.html" class="flex items-center gap-2.5">
+          <span
+            class="grid h-9 w-9 place-items-center rounded-lg bg-brand-600 font-display text-lg font-extrabold text-white"
+          >
+            C
+          </span>
+          <span class="font-display text-xl font-extrabold text-ink"
+            >CloudPC</span
+          >
+        </a>
+
+        <!-- Menu desktop -->
+        <ul class="hidden items-center gap-8 text-sm font-medium lg:flex">
+          <li>
+            <a
+              href="./index.html#tinh_nang"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Tính năng</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#so_lieu"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Hạ tầng mạng</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pricing.html"
+              aria-current="page"
+              class="text-brand-600 transition-colors duration-300"
+              >Bảng giá</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#faq"
+              class="hover:text-brand-600 transition-colors duration-300"
+              >Câu hỏi</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-2">
+          <a href="#cta" class="btn btn-primary hidden lg:inline-flex"
+            >Dùng thử ngay</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- 1. SECTION BẢNG GIÁ ĐẦY ĐỦ -->
+      <section
+        id="pricing"
+        class="section py-24"
+        aria-labelledby="pricing-title"
+      >
+        <div class="flex flex-col gap-14">
+          <div class="flex max-w-2xl flex-col gap-6">
+            <div class="flex flex-col gap-4">
+              <p class="eyebrow">Bảng giá</p>
+              <h1
+                id="pricing-title"
+                class="text-4xl font-extrabold leading-tight text-ink sm:text-5xl"
+              >
+                Trả tiền theo tháng, không ràng buộc
+              </h1>
+            </div>
+
+            <p class="text-lg text-muted">
+              Đổi gói bất cứ lúc nào, chi phí chênh lệch sẽ được tự động bù trừ.
+              Xóa máy ảo ngay khi hủy gói.
+            </p>
+          </div>
+
+          <ul
+            class="mx-auto grid w-full max-w-6xl items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
+          >
+            <!-- Gói 1 -->
+            <li
+              class="card flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center"
+            >
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold text-ink">
+                  Sinh viên IT & Treo máy
+                </h3>
+                <p class="text-sm text-muted">
+                  Đủ RAM để cắm tool MMO, chạy giả lập Android nhẹ.
+                </p>
+              </div>
+
+              <div class="text-5xl font-extrabold text-ink">
+                <span data-price>299K</span
+                ><span data-price-unit class="text-base font-normal text-muted"
+                  >/tháng</span
+                >
+              </div>
+
+              <ul
+                class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
+              >
+                <li>CPU: Xeon 8 nhân</li>
+                <li>RAM: 16GB DDR4</li>
+                <li>Ổ cứng: 256GB SSD</li>
+                <li>Card màn hình: Onboard</li>
+              </ul>
+
+              <button
+                class="btn border border-line mt-auto w-full text-ink hover:bg-surface-alt"
+                type="button"
+              >
+                Chọn gói này
+              </button>
+            </li>
+
+            <!-- Gói 2 -->
+            <li
+              class="card relative flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center ring-2 ring-brand-600"
+            >
+              <span
+                class="absolute -top-3 left-6 rounded-full bg-brand-600 px-3 py-1 text-xs font-bold tracking-wide text-white"
+                >Được chọn nhiều nhất</span
+              >
+
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold text-ink">Dựng phim & Vẽ 3D</h3>
+                <p class="text-sm text-muted">
+                  Có card rời để tăng tốc độ xuất video Premiere, After Effects.
+                </p>
+              </div>
+
+              <div class="text-5xl font-extrabold text-ink">
+                <span data-price>599K</span
+                ><span data-price-unit class="text-base font-normal text-muted"
+                  >/tháng</span
+                >
+              </div>
+
+              <ul
+                class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
+              >
+                <li>CPU: Xeon 16 nhân</li>
+                <li>RAM: 32GB DDR4</li>
+                <li>Card đồ họa: RTX 3060 (12GB)</li>
+                <li>Ổ cứng: 512GB NVMe tốc độ cao</li>
+              </ul>
+
+              <button class="btn btn-primary mt-auto w-full" type="button">
+                Chọn gói này
+              </button>
+            </li>
+
+            <!-- Gói 3 -->
+            <li
+              class="card flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center"
+            >
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold text-ink">Cày Game AAA (Max)</h3>
+                <p class="text-sm text-muted">
+                  Cấu hình tiệm cận phòng net VIP nhất. Chơi mượt mọi game nặng.
+                </p>
+              </div>
+
+              <div class="text-5xl font-extrabold text-ink">
+                <span data-price>999K</span
+                ><span data-price-unit class="text-base font-normal text-muted"
+                  >/tháng</span
+                >
+              </div>
+
+              <ul
+                class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
+              >
+                <li>CPU: i9 13900K (Trọn bộ)</li>
+                <li>RAM: 64GB DDR5</li>
+                <li>Card đồ họa: RTX 4090 (24GB)</li>
+                <li>Ổ cứng: 1TB NVMe Gen 4</li>
+              </ul>
+
+              <button
+                class="btn border border-line mt-auto w-full text-ink hover:bg-surface-alt"
+                type="button"
+              >
+                Liên hệ cấu hình tùy chỉnh
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 2. SECTION BẢNG SO SÁNH  -->
+      <section class="section py-24" aria-labelledby="sosanh-title">
+        <div class="flex flex-col gap-8">
+          <!-- Canh lề trái tiêu đề -->
+          <div class="flex max-w-2xl flex-col gap-4">
+            <p class="eyebrow">So sánh chi tiết</p>
+            <h2
+              id="sosanh-title"
+              class="text-3xl font-extrabold text-ink sm:text-4xl"
+            >
+              Phần cứng & Hạ tầng mạng
+            </h2>
+          </div>
+
+          <!-- Bảng so sánh -->
+          <div
+            class="relative overflow-x-auto rounded-2xl border border-line mt-4"
+          >
+            <table
+              class="w-full min-w-[720px] border-collapse text-left text-sm"
+            >
+              <caption class="sr-only">
+                So sánh tính năng của ba gói CloudPC
+              </caption>
+              <thead>
+                <tr class="border-b border-line bg-surface">
+                  <th scope="col" class="px-5 py-4 font-semibold text-ink">
+                    Thông số kỹ thuật
+                  </th>
+                  <th scope="col" class="px-5 py-4 font-semibold text-ink">
+                    Sinh viên IT
+                  </th>
+                  <th scope="col" class="px-5 py-4 font-semibold text-ink">
+                    Dựng phim & 3D
+                  </th>
+                  <th scope="col" class="px-5 py-4 font-semibold text-ink">
+                    Cày Game AAA
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-line bg-surface">
+                <tr>
+                  <th
+                    scope="row"
+                    class="px-5 py-4 text-left font-medium text-ink"
+                  >
+                    Vi xử lý (CPU)
+                  </th>
+                  <td class="px-5 py-4 text-muted">Xeon 8 nhân</td>
+                  <td class="px-5 py-4 text-muted">Xeon 16 nhân</td>
+                  <td class="px-5 py-4 text-muted">Intel Core i9 13900K</td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                    class="px-5 py-4 text-left font-medium text-ink"
+                  >
+                    Bộ nhớ đệm (RAM)
+                  </th>
+                  <td class="px-5 py-4 text-muted">16GB DDR4</td>
+                  <td class="px-5 py-4 text-muted">32GB DDR4</td>
+                  <td class="px-5 py-4 text-muted">64GB DDR5 siêu tốc</td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                    class="px-5 py-4 text-left font-medium text-ink"
+                  >
+                    Card đồ họa rời (GPU)
+                  </th>
+                  <td class="px-5 py-4 text-muted">
+                    <span aria-hidden="true">—</span
+                    ><span class="sr-only">Không có</span>
+                  </td>
+                  <td class="px-5 py-4 text-muted">RTX 3060 (12GB VRAM)</td>
+                  <td class="px-5 py-4 text-muted">RTX 4090 (24GB VRAM)</td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                    class="px-5 py-4 text-left font-medium text-ink"
+                  >
+                    Dung lượng ổ cứng
+                  </th>
+                  <td class="px-5 py-4 text-muted">256GB SSD</td>
+                  <td class="px-5 py-4 text-muted">512GB NVMe Gen 3</td>
+                  <td class="px-5 py-4 text-muted">1TB NVMe Gen 4</td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                    class="px-5 py-4 text-left font-medium text-ink"
+                  >
+                    Băng thông mạng ảo
+                  </th>
+                  <td class="px-5 py-4 text-muted">1 Gbps</td>
+                  <td class="px-5 py-4 text-muted">10 Gbps</td>
+                  <td class="px-5 py-4 text-muted">10 Gbps riêng biệt</td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                    class="px-5 py-4 text-left font-medium text-ink"
+                  >
+                    Độ ưu tiên hỗ trợ
+                  </th>
+                  <td class="px-5 py-4 text-muted">
+                    Tiêu chuẩn (Phản hồi < 2h)
+                  </td>
+                  <td class="px-5 py-4 text-muted">Cao (Phản hồi < 30p)</td>
+                  <td class="px-5 py-4 text-muted">
+                    VIP (Kỹ thuật hỗ trợ 1:1)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SECTION FAQ -->
+      <section class="section py-24" aria-labelledby="faq-gia-title">
+        <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <div class="flex flex-col gap-4">
+            <p class="eyebrow">Câu hỏi thường gặp</p>
+            <h2
+              id="faq-gia-title"
+              class="text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
+            >
+              Về thanh toán và đổi gói
+            </h2>
+            <p class="text-muted mt-2">
+              Còn câu hỏi khác? Đừng ngần ngại gọi 028 7300 1234 hoặc gửi yêu
+              cầu hỗ trợ qua Zalo.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <details class="border-b border-line pb-6" open>
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Thanh toán bằng hình thức nào?
+              </summary>
+              <p class="pt-4 leading-relaxed text-muted">
+                Bạn có thể chuyển khoản ngân hàng (quét mã QR) hoặc thanh toán
+                qua ví Momo/ZaloPay. Đối với khách hàng doanh nghiệp, chúng tôi
+                hỗ trợ xuất hóa đơn VAT điện tử ngay trong ngày.
+              </p>
+            </details>
+
+            <details class="border-b border-line pb-6">
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Trả trước theo năm có được giảm giá không?
+              </summary>
+              <p class="pt-4 leading-relaxed text-muted">
+                Có. Khi bạn thanh toán chu kỳ 1 năm (12 tháng), bạn chỉ cần trả
+                tiền 10 tháng (tương đương giảm giá 20%). Giá cước này sẽ được
+                giữ nguyên không đổi trong suốt chu kỳ ngay cả khi bảng giá niêm
+                yết tăng.
+              </p>
+            </details>
+
+            <details class="border-b border-line pb-6">
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Đang dùng gói Sinh viên, muốn nâng lên gói Game AAA giữa chừng
+                được không?
+              </summary>
+              <p class="pt-4 leading-relaxed text-muted">
+                Hoàn toàn được. Bạn chỉ cần nhấn nút "Nâng cấp" trong bảng điều
+                khiển. Hệ thống sẽ tự động tính toán số tiền chênh lệch của
+                những ngày còn lại. Bạn thanh toán xong, máy ảo sẽ tự cập nhật
+                cấu hình mới ngay khi khởi động lại.
+              </p>
+            </details>
+
+            <details class="border-b border-line pb-6">
+              <summary class="cursor-pointer text-lg font-bold text-ink">
+                Đến hạn mà tôi quên đóng tiền, dữ liệu trong máy có bị mất
+                không?
+              </summary>
+              <p class="pt-4 leading-relaxed text-muted">
+                Dữ liệu ổ cứng của bạn sẽ được "đóng băng" và lưu trữ hoàn toàn
+                miễn phí thêm 7 ngày sau khi hết hạn gói cước. Sang ngày thứ 8,
+                hệ thống mới tự động format ổ cứng ảo để giải phóng tài nguyên.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SECTION CTA -->
+      <section
+        id="cta"
+        class="section bg-surface py-24"
+        aria-labelledby="cta-title"
+      >
+        <div class="flex max-w-3xl flex-col gap-6 lg:gap-10">
+          <h2
+            id="cta-title"
+            class="text-3xl font-extrabold text-ink lg:text-4xl"
+          >
+            Vẫn chưa chắc chắn gói nào phù hợp?
+          </h2>
+
+          <p class="text-lg text-muted">
+            Hãy cho chúng tôi biết phần mềm bạn đang cần chạy hoặc tựa game bạn
+            muốn chơi, kỹ thuật viên sẽ tư vấn cấu hình vừa đủ dùng nhất để
+            tránh lãng phí.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <button class="btn btn-primary" type="button">
+              Nhắn tin Zalo hỗ trợ
+            </button>
+            <button
+              class="btn border border-line text-ink hover:bg-surface-alt"
+              type="button"
+            >
+              Gọi Hotline 028 7300 1234
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      id="footer"
+      class="bg-surface border-t border-line py-20"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
+
+      <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col gap-4">
+            <a href="./index.html" class="flex items-center gap-2.5">
+              <span
+                class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 font-bold text-white"
+                >C</span
+              >
+              <span class="font-display text-xl font-extrabold text-ink"
+                >CloudPC</span
+              >
+            </a>
+            <p class="max-w-xs text-sm text-muted">
+              Hệ thống cho thuê máy ảo chạy Windows cấu hình cao.
+            </p>
+          </div>
+
+          <nav aria-labelledby="footer-purpose" class="flex flex-col gap-6">
+            <h3 id="footer-purpose" class="text-sm font-bold text-ink">
+              Mục đích thuê
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a
+                  href="./index.html#tinh_nang"
+                  class="text-muted hover:text-brand-600 transition-colors"
+                  >Thuê để chơi Game nặng</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./index.html#tinh_nang"
+                  class="text-muted hover:text-brand-600 transition-colors"
+                  >Thuê để Render kiến trúc</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pricing.html"
+                  class="text-muted hover:text-brand-600 transition-colors"
+                  >Thuê để cắm tool, giả lập</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-support" class="flex flex-col gap-6">
+            <h3 id="footer-support" class="text-sm font-bold text-ink">
+              Hỗ trợ kỹ thuật
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a
+                  href="./index.html#faq"
+                  class="text-muted hover:text-brand-600 transition-colors"
+                  >Đọc câu hỏi thường gặp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-muted hover:text-brand-600 transition-colors"
+                  >Video hướng dẫn sử dụng</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-muted hover:text-brand-600 transition-colors"
+                  >Zalo hỗ trợ trực tiếp</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex flex-col gap-6">
+            <h3 class="text-sm font-bold text-ink">Liên hệ</h3>
+            <address class="text-sm not-italic text-muted">
+              Máy chủ đặt tại:<br />
+              Data Center Tân Thuận, Quận 7, TP.HCM
+            </address>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between gap-4 border-t border-line pt-8 md:flex-row"
+        >
+          <p class="text-sm text-muted">&copy; 2026 CloudPC VN.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
