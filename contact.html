@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ tư vấn — CloudPC</title>
+    <meta
+      name="description"
+      content="Gửi yêu cầu tư vấn thuê máy ảo CloudPC: kỹ thuật viên gọi lại trong 2 giờ, cấp tài khoản dùng thử và hỗ trợ cài đặt từ xa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div id="nav-sentinel" aria-hidden="true" class="h-px w-full"></div>
+
+    <a
+      href="#main"
+      class="btn btn-primary sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50"
+    >
+      Bỏ qua đến nội dung chính
+    </a>
+
+    <header
+      id="site-header"
+      class="sticky top-0 z-40 border-b border-line bg-surface/80 backdrop-blur transition-all duration-200"
+    >
+      <nav
+        aria-label="Main Navigation"
+        class="mx-auto flex w-full max-w-screen-xl items-center justify-between px-4 py-4 lg:px-8 lg:py-5"
+      >
+        <a href="./index.html" class="flex items-center gap-2.5">
+          <span
+            class="grid h-9 w-9 place-items-center rounded-lg bg-brand-600 font-display text-lg font-extrabold text-white"
+          >
+            C
+          </span>
+          <span class="font-display text-xl font-extrabold text-ink"
+            >CloudPC</span
+          >
+        </a>
+
+        <ul class="hidden items-center gap-8 text-sm font-medium lg:flex">
+          <li>
+            <a
+              href="./index.html#tinh_nang"
+              class="text-ink transition-colors duration-300 hover:text-brand-600"
+              >Tính năng</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#so_lieu"
+              class="text-ink transition-colors duration-300 hover:text-brand-600"
+              >Hạ tầng mạng</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pricing.html"
+              class="text-ink transition-colors duration-300 hover:text-brand-600"
+              >Bảng giá</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              aria-current="page"
+              class="text-brand-600 transition-colors duration-300"
+              >Liên hệ</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-2">
+          <a href="#main" class="btn btn-primary hidden lg:inline-flex"
+            >Dùng thử ngay</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section py-24" aria-labelledby="lienhe-title">
+        <div class="grid gap-12 lg:grid-cols-[1.3fr_1fr]">
+          <div class="flex flex-col gap-4">
+            <p class="eyebrow">Liên hệ</p>
+            <h1
+              id="lienhe-title"
+              class="text-4xl font-extrabold leading-tight text-ink sm:text-5xl"
+            >
+              Nói chuyện với kỹ thuật viên
+            </h1>
+            <p class="text-lg text-muted">
+              Điền vài dòng thông tin, chúng tôi sẽ gọi lại trong hai giờ làm
+              việc để chọn cấu hình máy ảo phù hợp nhất với bạn.
+            </p>
+
+            <form class="mt-10 grid gap-5 sm:grid-cols-2">
+              <div class="flex flex-col gap-2">
+                <label class="text-sm font-bold text-ink" for="ho-ten">
+                  Họ và tên
+                  <span class="text-brand-600" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  id="ho-ten"
+                  name="hoTen"
+                  type="text"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label class="text-sm font-bold text-ink" for="dien-thoai">
+                  Số điện thoại
+                  <span class="text-brand-600" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  id="dien-thoai"
+                  name="dienThoai"
+                  type="tel"
+                  required
+                  pattern="0[0-9]{9}"
+                  inputmode="numeric"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="flex flex-col gap-2 sm:col-span-2">
+                <label class="text-sm font-bold text-ink" for="email"
+                  >Email</label
+                >
+                <input
+                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="ten@vidu.com"
+                />
+              </div>
+
+              <div class="flex flex-col gap-2 sm:col-span-2">
+                <label class="text-sm font-bold text-ink" for="nhu-cau">
+                  Mục đích thuê chính
+                  <span class="text-brand-600" aria-hidden="true">*</span>
+                </label>
+                <select
+                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  id="nhu-cau"
+                  name="nhuCau"
+                  required
+                >
+                  <option value="">— Chọn nhu cầu của bạn —</option>
+                  <option value="treo-game">Treo game, cắm tool MMO</option>
+                  <option value="do-hoa">Dựng phim, thiết kế 3D</option>
+                  <option value="cay-game">Cày game AAA cấu hình cao</option>
+                  <option value="khac">Nhu cầu khác cần tư vấn</option>
+                </select>
+              </div>
+
+              <div class="flex flex-col gap-2 sm:col-span-2">
+                <label class="text-sm font-bold text-ink" for="noi-dung"
+                  >Phần mềm hoặc Game muốn chạy</label
+                >
+                <textarea
+                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  id="noi-dung"
+                  name="noiDung"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="flex items-start gap-3 sm:col-span-2">
+                <input
+                  class="mt-1 h-4 w-4 shrink-0 accent-brand-600"
+                  id="dong-y"
+                  name="dongY"
+                  type="checkbox"
+                  required
+                />
+                <div class="flex flex-col gap-1">
+                  <label class="text-sm font-bold text-ink" for="dong-y">
+                    Đồng ý để CloudPC liên hệ tư vấn
+                    <span class="text-brand-600" aria-hidden="true">*</span>
+                  </label>
+                  <p class="text-xs text-muted">
+                    Chúng tôi cam kết không chia sẻ số điện thoại cho bên thứ
+                    ba.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3 sm:col-span-2">
+                <button class="btn btn-primary w-full sm:w-auto" type="submit">
+                  Gửi yêu cầu tư vấn
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card h-full rounded-2xl border border-line p-8">
+            <h2 class="text-lg font-bold text-ink">Gọi thẳng cũng được</h2>
+            <p class="mt-2 text-sm text-muted">
+              Nhiều khách hàng thích gọi hơn điền form. Không sao cả.
+            </p>
+
+            <dl
+              class="mt-6 flex flex-col gap-5 border-t border-line pt-6 text-sm"
+            >
+              <div class="flex flex-col gap-1">
+                <dt class="font-semibold text-ink">Điện thoại</dt>
+                <dd class="text-ink">028 7300 1234</dd>
+              </div>
+              <div class="flex flex-col gap-1">
+                <dt class="font-semibold text-ink">Email</dt>
+                <dd class="text-ink">hotro@cloudpc.vn</dd>
+              </div>
+              <div class="flex flex-col gap-1">
+                <dt class="font-semibold text-ink">Giờ làm việc</dt>
+                <dd class="text-muted">
+                  Bộ phận kỹ thuật trực 24/7. Tư vấn từ 8:00 - 22:00 mỗi ngày.
+                </dd>
+              </div>
+              <div class="flex flex-col gap-1">
+                <dt class="font-semibold text-ink">Văn phòng</dt>
+                <dd class="text-muted">
+                  <address class="not-italic">
+                    Data Center FPT Tân Thuận<br />
+                    Quận 7, TP.HCM
+                  </address>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section py-24" aria-labelledby="quy-trinh-title">
+        <div class="flex flex-col gap-4">
+          <p class="eyebrow">Sau khi gửi</p>
+          <h2
+            id="quy-trinh-title"
+            class="text-3xl font-extrabold text-ink sm:text-4xl"
+          >
+            Ba bước, bắt đầu sử dụng ngay
+          </h2>
+        </div>
+
+        <ol
+          class="mt-14 grid w-full items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
+        >
+          <li
+            class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+          >
+            <span class="font-bold text-brand-600">Bước 01</span>
+            <h3 class="text-xl font-bold text-ink">Gọi điện tư vấn</h3>
+            <p class="text-sm leading-relaxed text-muted">
+              Hỏi rõ về tựa game hoặc công việc bạn đang làm, tình trạng mạng
+              hiện tại để đảm bảo thuê Cloud PC về là dùng mượt.
+            </p>
+          </li>
+          <li
+            class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+          >
+            <span class="font-bold text-brand-600">Bước 02</span>
+            <h3 class="text-xl font-bold text-ink">Cấp mã dùng thử</h3>
+            <p class="text-sm leading-relaxed text-muted">
+              Gửi bạn mã dùng thử hệ thống miễn phí trong 3 giờ để bạn tự tay
+              test kết nối, độ trễ trước khi thanh toán chính thức.
+            </p>
+          </li>
+          <li
+            class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+          >
+            <span class="font-bold text-brand-600">Bước 03</span>
+            <h3 class="text-xl font-bold text-ink">Cài đặt từ xa</h3>
+            <p class="text-sm leading-relaxed text-muted">
+              Nếu cần, kỹ thuật viên sẽ hỗ trợ cài app và tối ưu độ phân giải
+              thông qua UltraViewer trên máy tính thật của bạn.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer
+      id="footer"
+      class="border-t border-line bg-surface py-20"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
+
+      <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col gap-4">
+            <a href="./index.html" class="flex items-center gap-2.5">
+              <span
+                class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 font-bold text-white"
+                >C</span
+              >
+              <span class="font-display text-xl font-extrabold text-ink"
+                >CloudPC</span
+              >
+            </a>
+            <p class="max-w-xs text-sm text-muted">
+              Hệ thống cho thuê máy ảo chạy Windows cấu hình cao.
+            </p>
+          </div>
+
+          <nav aria-labelledby="footer-purpose" class="flex flex-col gap-6">
+            <h3 id="footer-purpose" class="text-sm font-bold text-ink">
+              Mục đích thuê
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="./index.html#tinh_nang" class="text-muted"
+                  >Thuê để chơi Game nặng</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#tinh_nang" class="text-muted"
+                  >Thuê để Render kiến trúc</a
+                >
+              </li>
+              <li>
+                <a href="./pricing.html" class="text-muted"
+                  >Thuê để cắm tool, giả lập</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-support" class="flex flex-col gap-6">
+            <h3 id="footer-support" class="text-sm font-bold text-ink">
+              Hỗ trợ kỹ thuật
+            </h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="./index.html#faq" class="text-muted"
+                  >Đọc câu hỏi thường gặp</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted">Video hướng dẫn sử dụng</a>
+              </li>
+              <li><a href="#" class="text-muted">Zalo hỗ trợ trực tiếp</a></li>
+            </ul>
+          </nav>
+
+          <div class="flex flex-col gap-6">
+            <h3 class="text-sm font-bold text-ink">Liên hệ</h3>
+            <address class="text-sm not-italic text-muted">
+              Máy chủ đặt tại:<br />
+              Data Center Tân Thuận, Quận 7, TP.HCM
+            </address>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between gap-4 border-t border-line pt-8 md:flex-row"
+        >
+          <p class="text-sm text-muted">&copy; 2026 CloudPC VN.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

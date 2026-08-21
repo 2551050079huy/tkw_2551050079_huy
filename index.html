@@ -29,7 +29,9 @@
           >
             C
           </span>
-          <span class="font-display text-xl font-extrabold">CloudPC</span>
+          <span class="font-display text-xl font-extrabold text-ink"
+            >CloudPC</span
+          >
         </a>
 
         <!-- Menu desktop -->
@@ -37,39 +39,58 @@
           <li>
             <a
               href="#tinh_nang"
-              class="hover:text-brand-600 transition-colors duration-300"
+              class="text-ink hover:text-brand-600 transition-colors duration-300"
               >Tính năng</a
             >
           </li>
           <li>
             <a
-              href="#cach_hoat_dong"
-              class="hover:text-brand-600 transition-colors duration-300"
-              >Cách hoạt động</a
+              href="#so_lieu"
+              class="text-ink hover:text-brand-600 transition-colors duration-300"
+              >Hạ tầng mạng</a
             >
           </li>
           <li>
             <a
-              href="#pricing"
-              class="hover:text-brand-600 transition-colors duration-300"
+              href="./pricing.html"
+              class="text-ink hover:text-brand-600 transition-colors duration-300"
               >Bảng giá</a
             >
           </li>
           <li>
             <a
-              href="#faq"
-              class="hover:text-brand-600 transition-colors duration-300"
-              >Câu hỏi</a
-            >
-          </li>
-          <li>
-            <a
-              href="#cta"
-              class="hover:text-brand-600 transition-colors duration-300"
-              >Dùng thử ngay</a
+              href="./contact.html"
+              class="text-ink hover:text-brand-600 transition-colors duration-300"
+              >Liên hệ</a
             >
           </li>
         </ul>
+
+        <div class="flex items-center gap-2">
+          <a href="#cta" class="btn btn-primary hidden lg:inline-flex"
+            >Dùng thử ngay</a
+          >
+
+          <button
+            type="button"
+            class="grid h-10 w-10 place-items-center rounded-pill border border-line text-ink lg:hidden"
+            aria-expanded="false"
+            aria-controls="nav-mobile"
+            aria-label="Mở menu"
+          >
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
 
@@ -178,7 +199,7 @@
 
           <div class="order-1 lg:order-2">
             <img
-              src="assets/img/camket.png"
+              src="assets/img/img1.webp"
               alt="Màn hình phần mềm render video"
               class="h-auto w-full rounded-2xl"
             />
@@ -188,7 +209,7 @@
         <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div class="order-1">
             <img
-              src="assets/img/doimoi.png"
+              src="assets/img/img2.webp"
               alt="Chơi game PC trên màn hình điện thoại"
               class="h-auto w-full rounded-2xl"
             />
@@ -219,72 +240,6 @@
         </div>
       </section>
 
-      <!-- SECTION CÁCH HOẠT ĐỘNG -->
-      <section
-        id="cach_hoat_dong"
-        class="section py-24"
-        aria-labelledby="cach_hoat_dong-title"
-      >
-        <div class="flex flex-col gap-14">
-          <!-- Cụm Tiêu đề -->
-          <div class="flex flex-col gap-4">
-            <p class="eyebrow">Cách hoạt động</p>
-            <h2
-              id="cach_hoat_dong-title"
-              class="text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
-            >
-              Ba bước đơn giản để sở hữu siêu máy trạm
-            </h2>
-          </div>
-
-          <!-- Lưới 3 bước -->
-          <ol class="grid w-full items-stretch gap-8 lg:grid-cols-3 lg:gap-6">
-            <!-- Bước 1 -->
-            <li
-              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
-            >
-              <span class="font-bold text-brand-600">Bước 01</span>
-              <h3 class="text-xl font-bold text-ink">
-                Tạo tài khoản & Tải app
-              </h3>
-              <p class="text-sm leading-relaxed text-muted">
-                Đăng ký nhanh bằng số điện thoại không cần thẻ ngân hàng. Tải
-                ứng dụng điều khiển CloudPC siêu nhẹ về máy tính hoặc điện thoại
-                của bạn.
-              </p>
-            </li>
-
-            <!-- Bước 2 -->
-            <li
-              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
-            >
-              <span class="font-bold text-brand-600">Bước 02</span>
-              <h3 class="text-xl font-bold text-ink">
-                Chọn cấu hình & Kết nối
-              </h3>
-              <p class="text-sm leading-relaxed text-muted">
-                Lựa chọn gói sức mạnh (Creator, AAA Gaming) phù hợp với nhu cầu
-                thực tế và nhấn "Kết nối". Siêu máy trạm sẽ được khởi tạo và sẵn
-                sàng trong tích tắc.
-              </p>
-            </li>
-
-            <!-- Bước 3 -->
-            <li
-              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
-            >
-              <span class="font-bold text-brand-600">Bước 03</span>
-              <h3 class="text-xl font-bold text-ink">Trải nghiệm sức mạnh</h3>
-              <p class="text-sm leading-relaxed text-muted">
-                Màn hình Windows ảo hiện lên chuẩn 4K không độ trễ. Giờ đây bạn
-                đã có toàn quyền cài đặt phần mềm nặng, tải game AAA và làm việc
-                ngay lập tức.
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
       <!-- 4. SECTION SỐ LIỆU -->
       <section
         id="so_lieu"
@@ -310,7 +265,6 @@
           <dl
             class="grid gap-y-12 sm:grid-cols-2 lg:col-span-7 sm:divide-x sm:divide-line"
           >
-            <!-- Đã bọc <dt> và <dd> vào div, dùng gap-2 và gỡ mt-2 -->
             <div class="flex flex-col gap-2 px-4 text-center sm:text-left">
               <dt class="order-2 text-sm leading-relaxed text-muted">
                 Từ máy tính nhà bạn đến máy chủ nội địa chỉ mất chưa tới 10
@@ -380,7 +334,74 @@
         </figure>
       </section>
 
-      <!-- 6. SECTION BẢNG GIÁ -->
+      <!-- 6. SECTION CÁCH HOẠT ĐỘNG -->
+      <section
+        id="cach_hoat_dong"
+        class="section py-24"
+        aria-labelledby="cach_hoat_dong-title"
+      >
+        <div class="flex flex-col gap-14">
+          <!-- Cụm Tiêu đề -->
+          <div class="flex flex-col gap-4">
+            <p class="eyebrow">Cách hoạt động</p>
+            <h2
+              id="cach_hoat_dong-title"
+              class="text-3xl font-extrabold leading-tight text-ink lg:text-4xl"
+            >
+              Ba bước đơn giản để sở hữu siêu máy trạm
+            </h2>
+          </div>
+
+          <ol
+            class="grid w-full items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
+          >
+            <!-- Bước 1 -->
+            <li
+              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+            >
+              <span class="font-bold text-brand-600">Bước 01</span>
+              <h3 class="text-xl font-bold text-ink">
+                Tạo tài khoản & Tải app
+              </h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Đăng ký nhanh bằng số điện thoại không cần thẻ ngân hàng. Tải
+                ứng dụng điều khiển CloudPC siêu nhẹ về máy tính hoặc điện thoại
+                của bạn.
+              </p>
+            </li>
+
+            <!-- Bước 2 -->
+            <li
+              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+            >
+              <span class="font-bold text-brand-600">Bước 02</span>
+              <h3 class="text-xl font-bold text-ink">
+                Chọn cấu hình & Kết nối
+              </h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Lựa chọn gói sức mạnh (Creator, AAA Gaming) phù hợp với nhu cầu
+                thực tế và nhấn "Kết nối". Siêu máy trạm sẽ được khởi tạo và sẵn
+                sàng trong tích tắc.
+              </p>
+            </li>
+
+            <!-- Bước 3 -->
+            <li
+              class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
+            >
+              <span class="font-bold text-brand-600">Bước 03</span>
+              <h3 class="text-xl font-bold text-ink">Trải nghiệm sức mạnh</h3>
+              <p class="text-sm leading-relaxed text-muted">
+                Màn hình Windows ảo hiện lên chuẩn 4K không độ trễ. Giờ đây bạn
+                đã có toàn quyền cài đặt phần mềm nặng, tải game AAA và làm việc
+                ngay lập tức.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 7. SECTION BẢNG GIÁ  -->
       <section
         id="pricing"
         class="section py-24"
@@ -401,9 +422,9 @@
           </div>
 
           <ul
-            class="mx-auto grid w-full max-w-6xl items-stretch gap-8 lg:grid-cols-3 lg:gap-6"
+            class="mx-auto grid w-full max-w-6xl items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
           >
-            <!-- Gói 1: Thêm gap-8 vào li và xóa mb-8, mb-10 -->
+            <!-- Gói 1 -->
             <li
               class="card flex h-full flex-col gap-8 rounded-2xl border border-line p-8 text-center"
             >
@@ -423,7 +444,7 @@
               <ul
                 class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
               >
-                <li>CPU: Xeon 8 nhân</li>
+                <li>CPU: i5-12500H</li>
                 <li>RAM: 16GB DDR4</li>
                 <li>Ổ cứng: 256GB SSD (Cài sẵn Win 10)</li>
                 <li>Card màn hình: Onboard</li>
@@ -458,7 +479,7 @@
               <ul
                 class="flex flex-col gap-5 border-t border-line pt-8 text-left text-sm text-ink"
               >
-                <li>CPU: Xeon 16 nhân</li>
+                <li>CPU: i7-13620H</li>
                 <li>RAM: 32GB DDR4</li>
                 <li>Card đồ họa: RTX 3060 (12GB VRAM)</li>
                 <li>Ổ cứng: 512GB NVMe tốc độ cao</li>
@@ -502,7 +523,7 @@
         </div>
       </section>
 
-      <!-- 7. SECTION FAQ -->
+      <!-- 8. SECTION FAQ -->
       <section
         id="faq"
         class="section bg-surface py-24"
@@ -568,7 +589,7 @@
         </div>
       </section>
 
-      <!-- 8. SECTION CTA -->
+      <!-- 9. SECTION CTA -->
       <section
         id="cta"
         class="section bg-surface py-24"
@@ -596,7 +617,7 @@
       </section>
     </main>
 
-    <!-- 9. FOOTER -->
+    <!-- 10. FOOTER -->
     <footer
       id="footer"
       class="bg-surface border-t border-line py-20"
@@ -604,9 +625,9 @@
     >
       <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
 
-      <!-- Bọc flex gap-16 thay cho mb-16 -->
       <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Đã cập nhật class sm:grid-cols-2 thay thế cho grid-cols-2 md:grid-cols-2 -->
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="flex flex-col gap-4">
             <a href="#" class="flex items-center gap-2.5">
               <span
