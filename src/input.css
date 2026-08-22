@@ -33,19 +33,18 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
   .dark {
     --color-ink: var(--color-ink-invert);
     --color-muted: var(--color-muted-invert);
     --color-surface: var(--color-surface-dark);
     --color-line: var(--color-line-invert);
+    --color-surface-alt: var(--color-surface-dark-alt);
   }
 
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-  }
-
-  /* Không cần thêm dark:bg... nữa vì biến màu tự động hoán đổi */
   body {
     @apply bg-surface text-ink font-body antialiased transition-colors duration-300;
   }
@@ -55,6 +54,8 @@
   h3 {
     @apply font-display tracking-tight;
   }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600 dark:outline-brand-300; }
 }
 
 @layer components {
@@ -84,6 +85,8 @@
   .btn-primary {
     @apply bg-brand-600 text-white hover:bg-brand-800;
   }
+  .btn-ghost   { @apply border border-line text-ink hover:bg-surface-alt; }
+  .btn-lg      { @apply px-7 py-3.5 text-base; }
 
   .card {
     @apply rounded-2xl border border-line bg-surface p-8 transition-colors duration-300;

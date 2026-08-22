@@ -72,9 +72,10 @@
           </li>
           <li>
             <a
-              href="./index.html#faq"
+              href="./contact.html"
+              aria-current="page"
               class="hover:text-brand-600 transition-colors duration-300"
-              >Câu hỏi</a
+              >Liên hệ</a
             >
           </li>
         </ul>
@@ -83,6 +84,25 @@
           <a href="#cta" class="btn btn-primary hidden lg:inline-flex"
             >Dùng thử ngay</a
           >
+          <button
+            type="button"
+            class="grid h-10 w-10 place-items-center rounded-pill border border-line text-ink lg:hidden"
+            aria-expanded="false"
+            aria-controls="nav-mobile"
+            aria-label="Mở menu"
+          >
+            <svg
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -230,7 +250,6 @@
       <!-- 2. SECTION BẢNG SO SÁNH  -->
       <section class="section py-24" aria-labelledby="sosanh-title">
         <div class="flex flex-col gap-8">
-          <!-- Canh lề trái tiêu đề -->
           <div class="flex max-w-2xl flex-col gap-4">
             <p class="eyebrow">So sánh chi tiết</p>
             <h2
@@ -345,6 +364,7 @@
             </table>
           </div>
         </div>
+        <p class="mt-4 text-sm text-muted lg:hidden">Vuốt ngang để xem hết bảng</p>
       </section>
 
       <!-- 3. SECTION FAQ -->
@@ -453,102 +473,93 @@
 
     <!-- FOOTER -->
     <footer
-      id="footer"
-      class="bg-surface border-t border-line py-20"
-      aria-labelledby="footer-heading"
-    >
-      <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
+    id="footer"
+    class="bg-surface border-t border-line py-20"
+    aria-labelledby="footer-heading"
+  >
+    <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
 
-      <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="flex flex-col gap-4">
-            <a href="./index.html" class="flex items-center gap-2.5">
-              <span
-                class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 font-bold text-white"
-                >C</span
-              >
-              <span class="font-display text-xl font-extrabold text-ink"
-                >CloudPC</span
-              >
-            </a>
-            <p class="max-w-xs text-sm text-muted">
-              Hệ thống cho thuê máy ảo chạy Windows cấu hình cao.
-            </p>
-          </div>
-
-          <nav aria-labelledby="footer-purpose" class="flex flex-col gap-6">
-            <h3 id="footer-purpose" class="text-sm font-bold text-ink">
-              Mục đích thuê
-            </h3>
-            <ul class="flex flex-col gap-4">
-              <li>
-                <a
-                  href="./index.html#tinh_nang"
-                  class="text-muted hover:text-brand-600 transition-colors"
-                  >Thuê để chơi Game nặng</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./index.html#tinh_nang"
-                  class="text-muted hover:text-brand-600 transition-colors"
-                  >Thuê để Render kiến trúc</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./pricing.html"
-                  class="text-muted hover:text-brand-600 transition-colors"
-                  >Thuê để cắm tool, giả lập</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <nav aria-labelledby="footer-support" class="flex flex-col gap-6">
-            <h3 id="footer-support" class="text-sm font-bold text-ink">
-              Hỗ trợ kỹ thuật
-            </h3>
-            <ul class="flex flex-col gap-4">
-              <li>
-                <a
-                  href="./index.html#faq"
-                  class="text-muted hover:text-brand-600 transition-colors"
-                  >Đọc câu hỏi thường gặp</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-muted hover:text-brand-600 transition-colors"
-                  >Video hướng dẫn sử dụng</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-muted hover:text-brand-600 transition-colors"
-                  >Zalo hỗ trợ trực tiếp</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <div class="flex flex-col gap-6">
-            <h3 class="text-sm font-bold text-ink">Liên hệ</h3>
-            <address class="text-sm not-italic text-muted">
-              Máy chủ đặt tại:<br />
-              Data Center Tân Thuận, Quận 7, TP.HCM
-            </address>
-          </div>
+    <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col gap-4">
+          <a href="#" class="flex items-center gap-2.5">
+            <span
+              class="grid h-8 w-8 place-items-center rounded-lg bg-brand-600 font-bold text-white"
+            >
+              C
+            </span>
+            <span class="font-display text-xl font-extrabold text-ink">
+              CloudPC
+            </span>
+          </a>
+          <p class="max-w-xs text-sm text-muted">
+            Hệ thống cho thuê máy ảo chạy Windows cấu hình cao.
+          </p>
         </div>
 
-        <div
-          class="flex flex-col items-center justify-between gap-4 border-t border-line pt-8 md:flex-row"
-        >
-          <p class="text-sm text-muted">&copy; 2026 CloudPC VN.</p>
+        <nav aria-labelledby="footer-purpose" class="flex flex-col gap-6">
+          <h3 id="footer-purpose" class="text-sm font-bold text-ink">
+            Mục đích thuê
+          </h3>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a href="./index.html#pricing" class="text-muted"
+                >Thuê để chơi Game nặng</a
+              >
+            </li>
+            <li>
+              <a href="./index.html#pricing" class="text-muted"
+                >Thuê để Render kiến trúc</a
+              >
+            </li>
+            <li>
+              <a href="./index.html#pricing" class="text-muted"
+                >Thuê để cắm tool, giả lập</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="footer-support" class="flex flex-col gap-6">
+          <h3 id="footer-support" class="text-sm font-bold text-ink">
+            Hỗ trợ kỹ thuật
+          </h3>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a href="./index.html#faq" class="text-muted">Đọc câu hỏi thường gặp</a>
+            </li>
+            <li>
+              <a href="./index.html#cach_hoat_dong" class="text-muted">Cách hoạt động</a>
+            </li>
+            <li><a href="contact.html" class="text-muted">Trao đổi & hỗ trợ</a></li>
+          </ul>
+        </nav>
+
+        <div class="flex flex-col gap-6">
+          <h3 class="text-sm font-bold text-ink">Địa chỉ</h3>
+          <address class="text-sm not-italic text-muted">
+            Văn phòng & Máy chủ :<br />
+            1074 Lê Văn Lương, Quận 7, TP.HCM
+          </address>
         </div>
       </div>
-    </footer>
+
+      <div
+        class="flex flex-col items-center justify-between gap-4 border-t border-line pt-8 md:flex-row"
+      >
+        <p class="text-sm text-muted">&copy; 2026 CloudPC VN.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="nut-len-dau" class="to-top" aria-label="Lên đầu trang">
+    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script type="module" src="./js/main.js"></script>
+
   </body>
 </html>

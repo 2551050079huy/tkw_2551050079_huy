@@ -92,6 +92,15 @@
           </button>
         </div>
       </nav>
+          <div id="nav-mobile" class="hidden border-t border-line px-5 pb-6 pt-4 lg:hidden">
+            <ul class="flex flex-col gap-1 text-base font-medium">
+              <li><a href="#tinh_nang" class="block text-ink">Tính năng</a></li>
+              <li><a href="#so_lieu" class="block text-ink">Hạ tầng mạng</a></li>
+              <li><a href="./pricing.html" class="block text-ink">Bảng giá</a></li>
+              <li><a href="./contact.html" class="block text-ink">Liên hệ</a></li>
+            </ul>
+            <a href="./contact.html" class="btn btn-primary btn-lg mt-4 w-full">Dùng thử 30 ngày</a>
+          </div>
     </header>
 
     <main id="main">
@@ -341,7 +350,6 @@
         aria-labelledby="cach_hoat_dong-title"
       >
         <div class="flex flex-col gap-14">
-          <!-- Cụm Tiêu đề -->
           <div class="flex flex-col gap-4">
             <p class="eyebrow">Cách hoạt động</p>
             <h2
@@ -626,7 +634,6 @@
       <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
 
       <div class="mx-auto flex max-w-6xl flex-col gap-16 px-5">
-        <!-- Đã cập nhật class sm:grid-cols-2 thay thế cho grid-cols-2 md:grid-cols-2 -->
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="flex flex-col gap-4">
             <a href="#" class="flex items-center gap-2.5">
@@ -650,12 +657,12 @@
             </h3>
             <ul class="flex flex-col gap-4">
               <li>
-                <a href="#tinh_nang" class="text-muted"
+                <a href="#pricing" class="text-muted"
                   >Thuê để chơi Game nặng</a
                 >
               </li>
               <li>
-                <a href="#tinh_nang" class="text-muted"
+                <a href="#pricing" class="text-muted"
                   >Thuê để Render kiến trúc</a
                 >
               </li>
@@ -676,17 +683,17 @@
                 <a href="#faq" class="text-muted">Đọc câu hỏi thường gặp</a>
               </li>
               <li>
-                <a href="#" class="text-muted">Video hướng dẫn sử dụng</a>
+                <a href="#cach_hoat_dong" class="text-muted">Cách hoạt động</a>
               </li>
-              <li><a href="#" class="text-muted">Zalo hỗ trợ trực tiếp</a></li>
+              <li><a href="contact.html" class="text-muted">Trao đổi & hỗ trợ</a></li>
             </ul>
           </nav>
 
           <div class="flex flex-col gap-6">
-            <h3 class="text-sm font-bold text-ink">Liên hệ</h3>
+            <h3 class="text-sm font-bold text-ink">Địa chỉ</h3>
             <address class="text-sm not-italic text-muted">
-              Máy chủ đặt tại:<br />
-              Data Center Tân Thuận, Quận 7, TP.HCM
+              Văn phòng & Máy chủ :<br />
+              1074 Lê Văn Lương, Quận 7, TP.HCM
             </address>
           </div>
         </div>
@@ -698,5 +705,15 @@
         </div>
       </div>
     </footer>
+
+    <button type="button" id="nut-len-dau" class="to-top" aria-label="Lên đầu trang">
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script type="module" src="./js/main.js"></script>
+
   </body>
 </html>
