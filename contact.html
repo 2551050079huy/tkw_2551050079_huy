@@ -14,6 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const dark = saved
+          ? saved === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      })();
+    </script>
+
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
@@ -47,25 +58,13 @@
 
         <ul class="hidden items-center gap-8 text-sm font-medium lg:flex">
           <li>
-            <a
-              href="./index.html#tinh_nang"
-              class="text-ink transition-colors duration-300 hover:text-brand-600"
-              >Tính năng</a
-            >
+            <a href="./index.html#tinh_nang" class="link-nav">Tính năng</a>
           </li>
           <li>
-            <a
-              href="./index.html#so_lieu"
-              class="text-ink transition-colors duration-300 hover:text-brand-600"
-              >Hạ tầng mạng</a
-            >
+            <a href="./index.html#so_lieu" class="link-nav">Hạ tầng mạng</a>
           </li>
           <li>
-            <a
-              href="./pricing.html"
-              class="text-ink transition-colors duration-300 hover:text-brand-600"
-              >Bảng giá</a
-            >
+            <a href="./pricing.html" class="link-nav">Bảng giá</a>
           </li>
           <li>
             <a
@@ -78,6 +77,40 @@
         </ul>
 
         <div class="flex items-center gap-2">
+          <button
+            type="button"
+            id="nut-nen-toi"
+            class="grid h-10 w-10 place-items-center rounded-pill border border-line text-ink"
+            aria-pressed="false"
+            aria-label="Chuyển nền sáng / nền tối"
+          >
+            <svg
+              class="h-5 w-5 dark:hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg
+              class="hidden h-5 w-5 dark:block"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"
+              />
+            </svg>
+          </button>
+
           <a href="#main" class="btn btn-primary hidden lg:inline-flex"
             >Dùng thử ngay</a
           >
@@ -102,10 +135,39 @@
           </button>
         </div>
       </nav>
+
+      <div
+        id="nav-mobile"
+        class="hidden border-t border-line px-5 pb-6 pt-4 lg:hidden"
+      >
+        <ul class="flex flex-col gap-1 text-base font-medium">
+          <li>
+            <a href="./index.html#tinh_nang" class="block text-ink py-2"
+              >Tính năng</a
+            >
+          </li>
+          <li>
+            <a href="./index.html#so_lieu" class="block text-ink py-2"
+              >Hạ tầng mạng</a
+            >
+          </li>
+          <li>
+            <a href="./pricing.html" class="block text-ink py-2">Bảng giá</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="block text-brand-600 py-2"
+              >Liên hệ</a
+            >
+          </li>
+        </ul>
+        <a href="#main" class="btn btn-primary btn-lg mt-4 w-full"
+          >Dùng thử ngay</a
+        >
+      </div>
     </header>
 
     <main id="main">
-      <section class="section py-24" aria-labelledby="lienhe-title">
+      <section class="section py-24" aria-labelledby="lienhe-title" data-reveal>
         <div class="grid gap-12 lg:grid-cols-[1.3fr_1fr]">
           <div class="flex flex-col gap-4">
             <p class="eyebrow">Liên hệ</p>
@@ -121,28 +183,29 @@
             </p>
 
             <form class="mt-10 grid gap-5 sm:grid-cols-2">
-              <div class="flex flex-col gap-2">
-                <label class="text-sm font-bold text-ink" for="ho-ten">
+              <div>
+                <label class="field-label" for="ho-ten">
                   Họ và tên
                   <span class="text-brand-600" aria-hidden="true">*</span>
                 </label>
                 <input
-                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  class="field-input"
                   id="ho-ten"
                   name="hoTen"
                   type="text"
                   required
                   autocomplete="name"
                 />
+                <p class="field-error" id="ho-ten-error" role="alert"></p>
               </div>
 
-              <div class="flex flex-col gap-2">
-                <label class="text-sm font-bold text-ink" for="dien-thoai">
+              <div>
+                <label class="field-label" for="dien-thoai">
                   Số điện thoại
                   <span class="text-brand-600" aria-hidden="true">*</span>
                 </label>
                 <input
-                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  class="field-input"
                   id="dien-thoai"
                   name="dienThoai"
                   type="tel"
@@ -151,51 +214,48 @@
                   inputmode="numeric"
                   autocomplete="tel"
                 />
+                <p class="field-error" id="dien-thoai-error" role="alert"></p>
               </div>
 
-              <div class="flex flex-col gap-2 sm:col-span-2">
-                <label class="text-sm font-bold text-ink" for="email"
-                  >Email</label
-                >
+              <div class="sm:col-span-2">
+                <label class="field-label" for="email">Email</label>
                 <input
-                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  class="field-input"
                   id="email"
                   name="email"
                   type="email"
                   autocomplete="email"
                   placeholder="ten@vidu.com"
                 />
+                <p class="field-error" id="email-error" role="alert"></p>
               </div>
 
-              <div class="flex flex-col gap-2 sm:col-span-2">
-                <label class="text-sm font-bold text-ink" for="nhu-cau">
+              <div class="sm:col-span-2">
+                <label class="field-label" for="nhu-cau">
                   Mục đích thuê chính
                   <span class="text-brand-600" aria-hidden="true">*</span>
                 </label>
-                <select
-                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
-                  id="nhu-cau"
-                  name="nhuCau"
-                  required
-                >
+                <select class="field-input" id="nhu-cau" name="nhuCau" required>
                   <option value="">— Chọn nhu cầu của bạn —</option>
                   <option value="treo-game">Treo game, cắm tool MMO</option>
                   <option value="do-hoa">Dựng phim, thiết kế 3D</option>
                   <option value="cay-game">Cày game AAA cấu hình cao</option>
                   <option value="khac">Nhu cầu khác cần tư vấn</option>
                 </select>
+                <p class="field-error" id="nhu-cau-error" role="alert"></p>
               </div>
 
-              <div class="flex flex-col gap-2 sm:col-span-2">
-                <label class="text-sm font-bold text-ink" for="noi-dung"
+              <div class="sm:col-span-2">
+                <label class="field-label" for="noi-dung"
                   >Phần mềm hoặc Game muốn chạy</label
                 >
                 <textarea
-                  class="w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-ink outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
+                  class="field-input"
                   id="noi-dung"
                   name="noiDung"
                   rows="4"
                 ></textarea>
+                <p class="field-error" id="noi-dung-error" role="alert"></p>
               </div>
 
               <div class="flex items-start gap-3 sm:col-span-2">
@@ -207,7 +267,7 @@
                   required
                 />
                 <div class="flex flex-col gap-1">
-                  <label class="text-sm font-bold text-ink" for="dong-y">
+                  <label class="field-label" for="dong-y">
                     Đồng ý để CloudPC liên hệ tư vấn
                     <span class="text-brand-600" aria-hidden="true">*</span>
                   </label>
@@ -215,6 +275,7 @@
                     Chúng tôi cam kết không chia sẻ số điện thoại cho bên thứ
                     ba.
                   </p>
+                  <p class="field-error" id="dong-y-error" role="alert"></p>
                 </div>
               </div>
 
@@ -226,7 +287,7 @@
             </form>
           </div>
 
-          <div class="card h-full rounded-2xl border border-line p-8">
+          <div class="card h-full">
             <h2 class="text-lg font-bold text-ink">Gọi thẳng cũng được</h2>
             <p class="mt-2 text-sm text-muted">
               Nhiều khách hàng thích gọi hơn điền form. Không sao cả.
@@ -263,7 +324,11 @@
         </div>
       </section>
 
-      <section class="section py-24" aria-labelledby="quy-trinh-title">
+      <section
+        class="section py-24"
+        aria-labelledby="quy-trinh-title"
+        data-reveal
+      >
         <div class="flex flex-col gap-4">
           <p class="eyebrow">Sau khi gửi</p>
           <h2
@@ -277,30 +342,33 @@
         <ol
           class="mt-14 grid w-full items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
         >
-          <li
-            class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
-          >
-            <span class="font-bold text-brand-600">Bước 01</span>
+          <li class="card flex h-full flex-col gap-4 text-left">
+            <span
+              class="badge bg-brand-50 text-brand-600 dark:bg-surface-dark dark:text-brand-300 w-fit"
+              >Bước 01</span
+            >
             <h3 class="text-xl font-bold text-ink">Gọi điện tư vấn</h3>
             <p class="text-sm leading-relaxed text-muted">
               Hỏi rõ về tựa game hoặc công việc bạn đang làm, tình trạng mạng
               hiện tại để đảm bảo thuê Cloud PC về là dùng mượt.
             </p>
           </li>
-          <li
-            class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
-          >
-            <span class="font-bold text-brand-600">Bước 02</span>
+          <li class="card flex h-full flex-col gap-4 text-left">
+            <span
+              class="badge bg-brand-50 text-brand-600 dark:bg-surface-dark dark:text-brand-300 w-fit"
+              >Bước 02</span
+            >
             <h3 class="text-xl font-bold text-ink">Cấp mã dùng thử</h3>
             <p class="text-sm leading-relaxed text-muted">
               Gửi bạn mã dùng thử hệ thống miễn phí trong 3 giờ để bạn tự tay
               test kết nối, độ trễ trước khi thanh toán chính thức.
             </p>
           </li>
-          <li
-            class="card flex h-full flex-col gap-4 rounded-2xl border border-line p-8 text-left"
-          >
-            <span class="font-bold text-brand-600">Bước 03</span>
+          <li class="card flex h-full flex-col gap-4 text-left">
+            <span
+              class="badge bg-brand-50 text-brand-600 dark:bg-surface-dark dark:text-brand-300 w-fit"
+              >Bước 03</span
+            >
             <h3 class="text-xl font-bold text-ink">Cài đặt từ xa</h3>
             <p class="text-sm leading-relaxed text-muted">
               Nếu cần, kỹ thuật viên sẽ hỗ trợ cài app và tối ưu độ phân giải
@@ -313,7 +381,7 @@
 
     <footer
       id="footer"
-      class="border-t border-line bg-surface py-20"
+      class="bg-surface border-t border-line py-20"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" class="sr-only">Chân trang và Liên kết</h2>
@@ -341,17 +409,17 @@
             </h3>
             <ul class="flex flex-col gap-4">
               <li>
-                <a href="./index.html#pricing" class="text-muted"
+                <a href="./index.html#pricing" class="link-nav"
                   >Thuê để chơi Game nặng</a
                 >
               </li>
               <li>
-                <a href="./index.html#pricing" class="text-muted"
+                <a href="./index.html#pricing" class="link-nav"
                   >Thuê để Render kiến trúc</a
                 >
               </li>
               <li>
-                <a href="./index.html#pricing" class="text-muted"
+                <a href="./index.html#pricing" class="link-nav"
                   >Thuê để cắm tool, giả lập</a
                 >
               </li>
@@ -364,12 +432,18 @@
             </h3>
             <ul class="flex flex-col gap-4">
               <li>
-                <a href="./index.html#faq" class="text-muted">Đọc câu hỏi thường gặp</a>
+                <a href="./index.html#faq" class="link-nav"
+                  >Đọc câu hỏi thường gặp</a
+                >
               </li>
               <li>
-                <a href="./index.html#cach_hoat_dong" class="text-muted">Cách hoạt động</a>
+                <a href="./index.html#cach_hoat_dong" class="link-nav"
+                  >Cách hoạt động</a
+                >
               </li>
-              <li><a href="contact.html" class="text-muted">Trao đổi & hỗ trợ</a></li>
+              <li>
+                <a href="contact.html" class="link-nav">Trao đổi & hỗ trợ</a>
+              </li>
             </ul>
           </nav>
 
@@ -390,14 +464,26 @@
       </div>
     </footer>
 
-    <button type="button" id="nut-len-dau" class="to-top" aria-label="Lên đầu trang">
-      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <button
+      type="button"
+      id="nut-len-dau"
+      class="to-top"
+      aria-label="Lên đầu trang"
+    >
+      <svg
+        class="h-5 w-5"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
         <path d="M12 19V5M5 12l7-7 7 7" />
       </svg>
     </button>
 
     <script type="module" src="./js/main.js"></script>
-    
   </body>
 </html>
