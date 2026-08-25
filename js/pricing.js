@@ -1,1 +1,22 @@
-export function initPricing() { }
+export function initPricing() {
+  const toggle = document.getElementById("cong-tac-gia");
+  const prices = document.querySelectorAll("[data-price]");
+
+  if (!toggle || prices.length === 0) return;
+
+  const dong = new Intl.NumberFormat("vi-VN", {
+    style: "currency",
+    currency: "VND",
+    maximumFractionDigits: 0,
+  });
+
+  toggle.addEventListener("click", () => {
+    const isChecked = toggle.getAttribute("aria-checked") === "true";
+    toggle.setAttribute("aria-checked", String(!isChecked));
+
+    prices.forEach((el) => {
+      const rawPrice = !isChecked ? el.dataset.yearly : el.dataset.monthly;
+      el.textContent = dong.format(Number(rawPrice));
+    });
+  });
+}

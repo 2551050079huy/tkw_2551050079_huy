@@ -55,7 +55,8 @@
     @apply font-display tracking-tight;
   }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-brand-600 dark:outline-brand-300; }
+    @apply outline-2 outline-offset-2 outline-brand-600 dark:outline-brand-300;
+  }
 }
 
 @layer components {
@@ -85,11 +86,136 @@
   .btn-primary {
     @apply bg-brand-600 text-white hover:bg-brand-800;
   }
-  .btn-ghost   { @apply border border-line text-ink hover:bg-surface-alt; }
-  .btn-lg      { @apply px-7 py-3.5 text-base; }
+  .btn-ghost {
+    @apply border border-line text-ink hover:bg-surface-alt;
+  }
+  .btn-lg {
+    @apply px-7 py-3.5 text-base;
+  }
 
   .card {
     @apply rounded-2xl border border-line bg-surface p-8 transition-colors duration-300;
     @apply dark:bg-[var(--color-surface-dark-alt)];
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-pill px-3 py-1 text-xs font-semibold;
+  }
+
+  .link-nav {
+    @apply text-ink transition-colors duration-150 hover:text-brand-600 dark:hover:text-brand-300;
+  }
+
+  .tick {
+    @apply mt-0.5 h-4 w-4 shrink-0 text-brand-600 dark:text-brand-300;
+  }
+
+  .field-label {
+    @apply block text-sm font-semibold text-ink;
+  }
+  .field-input {
+    @apply mt-1.5 w-full rounded-lg border border-line bg-surface px-3.5 py-2.5 text-base
+           text-ink placeholder:text-muted
+           focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/30
+           dark:bg-surface-dark-alt dark:focus:border-brand-300 dark:focus:ring-brand-300/30
+         aria-invalid:border-red-500 aria-invalid:ring-red-500/30;
+  }
+  .field-error {
+    @apply mt-1.5 text-sm font-medium text-red-500 empty:hidden dark:text-red-400;
+  }
+
+  .ticket {
+    @apply relative rounded-card border border-line bg-surface p-6 shadow-xl
+           dark:bg-surface-dark-alt dark:shadow-none;
+  }
+  .ticket::after {
+    content: "";
+    @apply absolute inset-x-0 -bottom-2 h-4;
+    background-image: radial-gradient(
+      circle at 6px 0,
+      transparent 6px,
+      var(--color-surface) 6px
+    );
+    background-size: 12px 12px;
+    background-repeat: repeat-x;
+  }
+  .dark .ticket::after {
+    background-image: radial-gradient(
+      circle at 6px 0,
+      transparent 6px,
+      var(--color-surface-dark-alt) 6px
+    );
+  }
+}
+@layer components {
+  .to-top {
+    @apply fixed bottom-6 right-6 z-40 grid h-11 w-11 place-items-center
+           rounded-pill border border-line bg-surface text-ink shadow-lg
+           opacity-0 transition-opacity duration-200
+           pointer-events-none
+           dark:bg-surface-dark-alt dark:text-ink-invert;
+  }
+  .to-top.is-visible {
+    @apply pointer-events-auto opacity-100;
+  }
+
+  .faq-trigger {
+    @apply cursor-pointer;
+  }
+  .faq-icon {
+    @apply transition-transform duration-200;
+  }
+  .faq-trigger[aria-expanded="true"] .faq-icon {
+    @apply rotate-180;
+  }
+
+  .cong-tac {
+    @apply relative h-7 w-12 shrink-0 rounded-pill border border-line bg-line
+           transition-colors duration-200;
+  }
+  .cong-tac-num {
+    @apply absolute left-0.5 top-0.5 h-5 w-5 rounded-pill bg-surface shadow
+           transition-transform duration-200;
+  }
+  .cong-tac[aria-checked="true"] .cong-tac-num {
+    @apply translate-x-5;
+  }
+
+  .slider-viewport {
+    @apply overflow-hidden;
+  }
+  .slider-track {
+    @apply flex list-none p-0 m-0;
+    transition: transform 400ms ease;
+  }
+  .slider-slide {
+    @apply w-full shrink-0;
+  }
+  .slider-nav {
+    @apply grid h-10 w-10 place-items-center rounded-pill border border-line
+           bg-surface transition-colors hover:bg-surface-alt
+           dark:bg-surface-dark-alt;
+  }
+
+  .slider-dot {
+    @apply grid h-6 w-6 place-items-center rounded-pill bg-transparent;
+  }
+  .slider-dot::before {
+    content: "";
+    @apply block h-2.5 w-2.5 rounded-pill border border-line transition-colors;
+  }
+  .slider-dot[aria-current="true"]::before {
+    @apply border-brand-600 bg-brand-600;
+  }
+
+  .js [data-reveal] {
+    @apply opacity-0;
+    transform: translateY(16px);
+    transition:
+      opacity 500ms ease,
+      transform 500ms ease;
+  }
+  .js [data-reveal].is-visible {
+    @apply opacity-100;
+    transform: none;
   }
 }
